@@ -1,0 +1,110 @@
+'use client'
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
+export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Handle background change on scroll for that premium feel
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navLinks = [
+    { name: 'Who We Are', href: '#' },
+    { name: 'Strategies', href: '#' },
+    { name: 'Insights', href: '#' },
+    { name: 'Careers', href: '#' },
+  ];
+
+  return (
+    <nav className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
+        scrolled ? 'bg-gray-900/95 backdrop-blur-md py-3 shadow-xl border-b border-gray-800' : 'bg-gray-900 py-6 border-b border-gray-800'
+    }`}>
+      <div className="container mx-auto px-6 flex justify-between items-center">
+        {/* Logo - Citadel Style Boldness */}
+        <div className="flex items-center gap-3">
+          <img src="/eqfi-logo.jpg" alt="EQFI Logo" className="h-10 w-auto object-contain" />
+        </div>
+
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-10">
+            {navLinks.map((link) => (
+              <a 
+                key={link.name} 
+                href={link.href} 
+                className="text-gray-200 hover:text-amber-500 text-xs font-bold uppercase tracking-widest transition-colors"
+              >
+                {link.name}
+              </a>
+            ))}
+            <button className="bg-amber-500 text-gray-900 hover:bg-amber-400 px-6 py-2 text-xs font-bold uppercase tracking-widest rounded transition-all">
+              Client Login
+            </button>
+        </div>
+
+        {/* Mobile Toggle Button */}
+        <button 
+            className="md:hidden text-gray-200 p-2"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <div className="space-y-1.5">
+            <motion.span animate={isOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }} className="block w-6 h-0.5 bg-gray-900"></motion.span>
+            <motion.span animate={isOpen ? { opacity: 0 } : { opacity: 1 }} className="block w-6 h-0.5 bg-amber-500"></motion.span>
+            <motion.span animate={isOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }} className="block w-6 h-0.5 bg-gray-900"></motion.span>
+          </div>
+        </button>
+      </div>
+
+      {/* Mobile Menu Overlay - "Bold & Colorful" */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
+            className="fixed inset-0 h-screen bg-gray-900 z-[99] flex flex-col p-8 md:hidden"
+          >
+            <div className="flex flex-col gap-8 mt-20">
+              {navLinks.map((link, i) => (
+                <motion.a
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: i * 0.1 }}
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                    className="text-gray-200 text-3xl font-display border-b border-gray-800 pb-4 flex justify-between items-center group"
+                >
+                  {link.name}
+                  <span className="text-amber-500">→</span>
+                </motion.a>
+              ))}
+              
+              <motion.button 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="mt-4 bg-amber-500 text-white py-4 font-bold uppercase tracking-widest rounded shadow"
+              >
+                Request Call Back
+              </motion.button>
+            </div>
+
+            {/* Bottom Info in Mobile Menu */}
+              <div className="mt-auto text-gray-400 text-sm">
+                <p>EQFI Global Offices</p>
+              <p className="text-amber-500">Contact: +234 906 485 2460</p>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </nav>
+  );
+}
