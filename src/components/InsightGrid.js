@@ -18,7 +18,10 @@ export default function InsightsGrid() {
             {['Personal Wealth Management', 'Institutional Investing'].map((service, i) => (
               <div key={service} className="group cursor-pointer rounded-lg border border-gray-200 bg-gray-50 p-6 hover:shadow-lg transition">
                 <div className="aspect-[16/9] bg-gray-200 mb-8 overflow-hidden rounded-lg">
-                   <img src={`https://images.unsplash.com/photo-${i === 0 ? '1591115765373-5a921d1306f2' : '1600880292203-757bb62b4baf'}?auto=format&fit=crop&q=80`} className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" alt={service} />
+                   <img src={i === 0
+                     ? "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                     : "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80"}
+                     className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700" alt={service} />
                 </div>
                 <h3 className="text-2xl font-extrabold mb-4 text-gray-900 font-display group-hover:text-amber-500 transition-colors">{service}</h3>
                 <p className="text-gray-500 mb-6 max-w-md text-base leading-relaxed">Tailored strategies and institutional-grade portfolio management for global impact.</p>
