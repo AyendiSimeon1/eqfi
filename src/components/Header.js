@@ -23,34 +23,39 @@ export default function Header() {
   ];
 
   return (
-    <nav className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
-        scrolled ? 'bg-gray-900/95 backdrop-blur-md py-3 shadow-xl border-b border-gray-800' : 'bg-gray-900 py-6 border-b border-gray-800'
-    }`}>
+      <motion.nav
+        initial={{ y: -80, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: 'spring', stiffness: 80, damping: 18 }}
+        className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
+          scrolled ? 'bg-black/95 backdrop-blur-md py-3 shadow-xl border-b border-gray-800' : 'bg-black py-7 border-b border-gray-800'
+        }`}
+      >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo - Citadel Style Boldness */}
         <div className="flex items-center gap-3">
-          <img src="/eqfi-logo.jpg" alt="EQFI Logo" className="h-10 w-auto object-contain" />
+            <img src="/eqfi-logo.jpg" alt="EQFI Logo" className="h-12 w-auto object-contain" />
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-10">
+          <div className="hidden md:flex items-center gap-12">
             {navLinks.map((link) => (
               <a 
                 key={link.name} 
                 href={link.href} 
-                className="text-gray-200 hover:text-amber-500 text-xs font-bold uppercase tracking-widest transition-colors"
+                className="text-gray-100 hover:text-amber-500 text-lg font-extrabold uppercase tracking-widest transition-colors drop-shadow-lg"
               >
                 {link.name}
               </a>
             ))}
-            <button className="bg-amber-500 text-gray-900 hover:bg-amber-400 px-6 py-2 text-xs font-bold uppercase tracking-widest rounded transition-all">
+            <button className="bg-amber-500 text-black hover:bg-amber-400 px-8 py-3 text-lg font-extrabold uppercase tracking-widest rounded transition-all drop-shadow-lg">
               Client Login
             </button>
         </div>
 
         {/* Mobile Toggle Button */}
         <button 
-            className="md:hidden text-gray-200 p-2"
+              className="md:hidden text-gray-100 p-2"
           onClick={() => setIsOpen(!isOpen)}
         >
           <div className="space-y-1.5">
@@ -69,7 +74,7 @@ export default function Header() {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed inset-0 h-screen bg-gray-900 z-[99] flex flex-col p-8 md:hidden"
+              className="fixed inset-0 h-screen bg-black z-[99] flex flex-col p-8 md:hidden"
           >
             <div className="flex flex-col gap-8 mt-20">
               {navLinks.map((link, i) => (
@@ -80,7 +85,7 @@ export default function Header() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                    className="text-gray-200 text-3xl font-display border-b border-gray-800 pb-4 flex justify-between items-center group"
+                    className="text-gray-100 text-3xl font-extrabold font-display border-b border-gray-800 pb-4 flex justify-between items-center group"
                 >
                   {link.name}
                   <span className="text-amber-500">→</span>
@@ -91,7 +96,7 @@ export default function Header() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                className="mt-4 bg-amber-500 text-white py-4 font-bold uppercase tracking-widest rounded shadow"
+                  className="mt-4 bg-amber-500 text-black py-5 text-2xl font-extrabold uppercase tracking-widest rounded shadow"
               >
                 Request Call Back
               </motion.button>
@@ -105,6 +110,6 @@ export default function Header() {
           </motion.div>
         )}
       </AnimatePresence>
-    </nav>
+      </motion.nav>
   );
 }

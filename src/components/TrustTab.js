@@ -9,33 +9,54 @@ const tabData = [
   { id: 'approach', label: 'Global Approach', title: 'Top-Down, Global Perspective', text: 'We analyze global drivers to identify opportunities across equity and fixed-income markets worldwide.' },
 ];
 
+const awardImages = [
+  'https://cdn-icons-png.flaticon.com/512/1828/1828884.png', // trophy
+  'https://cdn-icons-png.flaticon.com/512/3135/3135715.png', // medal
+  'https://cdn-icons-png.flaticon.com/512/190/190411.png', // star
+  'https://cdn-icons-png.flaticon.com/512/616/616494.png', // badge
+  'https://cdn-icons-png.flaticon.com/512/1057/1057089.png', // ribbon
+];
+
 export default function TrustTabs() {
   const [activeTab, setActiveTab] = useState('experience');
 
   return (
-    <section className="py-20 bg-gradient-to-br from-wealth-blueLight via-wealth-blue to-wealth-blueDark">
+    <section className="py-24 bg-gradient-to-br from-gray-50 via-gray-200 to-gray-100 border-b border-gray-200">
       <div className="container mx-auto px-6">
         {/* Award Badges Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center mb-20 opacity-80">
-          {['USA TODAY Best 2025', 'Kiplinger 2024', 'Newsweek Top Firm', 'Kiplinger Quality', 'Citywire 50'].map((award) => (
-            <div key={award} className="h-24 border border-wealth-blue flex items-center justify-center p-4 text-center text-[10px] font-bold uppercase tracking-tighter text-wealth-blueDark bg-wealth-blueLight">
-              [Logo: {award}]
-            </div>
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-10 items-center mb-20">
+          {['USA TODAY Best 2025', 'Kiplinger 2024', 'Newsweek Top Firm', 'Kiplinger Quality', 'Citywire 50'].map((award, i) => (
+            <motion.div
+              key={award}
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ type: 'spring', stiffness: 60, damping: 18, delay: 0.1 * i }}
+              className="h-28 border border-gray-200 flex flex-col items-center justify-center p-4 text-center rounded-xl bg-white shadow-lg"
+            >
+              <img 
+                src={awardImages[i]}
+                alt={award + ' logo'} 
+                className="h-12 mb-3 object-contain drop-shadow-lg" 
+                loading="lazy"
+              />
+              <span className="text-gray-900 font-extrabold text-base md:text-lg uppercase tracking-tight mb-1">{award}</span>
+            </motion.div>
           ))}
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-display text-wealth-gold font-bold mb-10">
+        <h2 className="text-4xl md:text-5xl font-display text-amber-500 font-extrabold mb-12 drop-shadow-lg">
           Structured to Always Put Your Interests First
         </h2>
 
         {/* Custom Tabs */}
-        <div className="border-b border-wealth-blue mb-12 flex overflow-x-auto no-scrollbar">
+        <div className="border-b border-gray-200 mb-14 flex overflow-x-auto no-scrollbar">
           {tabData.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
-              className={`px-6 py-4 text-sm font-bold uppercase tracking-widest whitespace-nowrap transition-all border-b-2 ${
-                activeTab === tab.id ? 'border-wealth-gold text-wealth-blueDark' : 'border-transparent text-wealth-blue'
+              className={`px-8 py-5 text-lg font-extrabold uppercase tracking-widest whitespace-nowrap transition-all border-b-4 ${
+                activeTab === tab.id ? 'border-amber-500 text-gray-900 bg-gray-100' : 'border-transparent text-gray-500'
               }`}
             >
               {tab.label}
@@ -44,28 +65,28 @@ export default function TrustTabs() {
         </div>
 
         {/* Tab Content */}
-        <div className="grid md:grid-cols-2 gap-12 items-center min-h-[300px]">
+        <div className="grid md:grid-cols-2 gap-16 items-center min-h-[300px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={activeTab}
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: 20 }}
-              transition={{ duration: 0.3 }}
+              initial={{ opacity: 0, y: 60 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 60 }}
+              transition={{ type: 'spring', stiffness: 60, damping: 18 }}
             >
-              <h3 className="text-4xl font-display text-wealth-blue mb-6">
+              <h3 className="text-3xl md:text-4xl font-display text-gray-900 font-extrabold mb-8 drop-shadow-lg">
                 {tabData.find(t => t.id === activeTab).title}
               </h3>
-              <p className="text-wealth-blueDark text-lg leading-relaxed mb-8">
+              <p className="text-gray-600 text-2xl leading-relaxed font-medium mb-10">
                 {tabData.find(t => t.id === activeTab).text}
               </p>
-              <button className="bg-wealth-gold text-wealth-blueDark px-8 py-3 font-bold text-xs uppercase tracking-widest">
+              <button className="bg-amber-500 text-black px-10 py-4 font-extrabold text-lg uppercase tracking-widest rounded shadow drop-shadow-lg">
                 Learn More
               </button>
             </motion.div>
           </AnimatePresence>
 
-          <div className="bg-wealth-blueLight aspect-video relative overflow-hidden rounded-sm">
+          <div className="bg-gray-100 aspect-video relative overflow-hidden rounded-xl shadow-lg">
             <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80')] bg-cover bg-center grayscale" />
           </div>
         </div>

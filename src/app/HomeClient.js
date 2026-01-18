@@ -21,7 +21,7 @@ export default function HomeClient() {
         transition={{ duration: 0.7, ease: 'easeOut' }}
       >
         <div className="text-wealth-blue font-display text-2xl font-bold tracking-tighter">
-          CITADEL <span className="text-wealth-gold">FISHER</span>
+           <span className="text-wealth-gold">EQFI</span>
         </div>
         <div className="hidden md:flex gap-8 text-wealth-blueLight text-sm font-medium uppercase tracking-widest">
           <a href="#" className="hover:text-wealth-gold transition">Who We Are</a>
@@ -50,26 +50,28 @@ export default function HomeClient() {
       <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.4 }}>
         <Services />
       </motion.div>
+      <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.7 }}>
+        <TrustTab />
+      </motion.div>
 
       {/* Insights Grid section */}
       <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.5 }}>
         <InsightGrid />
       </motion.div>
 
+    
       {/* Strategies Slider section */}
       <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.6 }}>
         <Slider />
       </motion.div>
 
       {/* Trust Tab section */}
-      <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.7 }}>
-        <TrustTab />
-      </motion.div>
+      
 
       {/* Testimonials section */}
-      <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.8 }}>
+      {/* <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.8 }}>
         <Testimonials />
-      </motion.div>
+      </motion.div> */}
 
       {/* Footer / Contact */}
       <motion.footer
@@ -90,9 +92,9 @@ export default function HomeClient() {
       </motion.footer>
 
       {/* Interactive Mobile Elements */}
-      <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 1 }}>
+      {/* <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 1 }}>
         <MobileCallback />
-      </motion.div>
+      </motion.div> */}
     </main>
   );
 }

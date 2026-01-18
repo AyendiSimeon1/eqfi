@@ -46,17 +46,31 @@ const StatBox = ({ label, value }) => {
 export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex items-center bg-gray-50 overflow-hidden pt-20 border-b border-gray-200">
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-60"
+        poster="/investment.jpg"
+      >
+        <source src="/hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
       {/* Abstract Art Overlay */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
+      <div className="absolute inset-0 opacity-10 pointer-events-none z-10">
         <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] rounded-full bg-amber-500 blur-[120px]" />
         <div className="absolute bottom-[-10%] left-[-10%] w-[400px] h-[400px] rounded-full bg-gray-900 blur-[100px]" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-20">
         <div className="max-w-4xl">
           <motion.h1 
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: 'spring', stiffness: 60, damping: 18 }}
             className="text-5xl md:text-8xl font-display text-gray-900 leading-tight mb-8 drop-shadow-lg"
           >
             Turning <span className="text-amber-500 italic">Ambition</span> <br /> 
@@ -64,9 +78,9 @@ export default function Hero() {
           </motion.h1>
           
           <motion.p 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
+            initial={{ opacity: 0, y: 60 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, type: 'spring', stiffness: 60, damping: 18 }}
             className="text-gray-500 text-lg md:text-xl max-w-xl mb-12"
           >
             We combine quantitative precision with human insight to manage wealth for the world's most sophisticated investors.
