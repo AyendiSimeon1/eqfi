@@ -31,39 +31,45 @@ These assets serve a purpose to deliver high alphas to the portfolio of the clie
 export const insights = [
   {
     category: 'STRATEGY',
-    title: 'Quant',
+    title: 'Quantitative Trading',
     date: 'Jan 19, 2026',
-    description: `New trading technics are appealing to a segment of our clientele. The use of statistics and mathematical skills to derive minute and multiple alpha advantage in the markets is real and well studied and encouraged. We are fully on ground to take adequate advantage of quantitative techniques in the markets.\n\nWe have linkages with universities through our careers and continuing professional development to assemble and mentor a retinue of leaders and practitioners in that field for the coming years. Quant trading requires high capital and laser-like focus on the techniques and methods. We also need better access to capital in the hundreds of millions of Dollars to achieve what larger and more dominant firms in the industry have achieved.`
+    image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80', // Quantitative trading: stock charts
+    description: `Quantitative trading leverages advanced statistics and mathematics to identify and exploit market inefficiencies. At Eqfi Invest, we are fully equipped to take advantage of these techniques, collaborating with universities and mentoring future leaders in the field. Quant trading requires significant capital and focus, and we are committed to scaling our operations to compete with the best in the industry.`
   },
   {
     category: 'STRATEGY',
-    title: 'Long / Short',
+    title: 'Long / Short Strategy',
     date: 'Jan 19, 2026',
-    description: `While we run our operations as a hedge fund, our strategy is basically a long only strategy most times and at strategic stages, we enable a short trade especially in the currency markets.\n\nThis strategy has paid off handsomely with total percentage gain to date of over 503% over 3 years of operations actively. If we are to take a lifetime review of trading, this strategy account for over 5000% roi over a period of 15 years. It is credible and beneficial to us and we do not intend to change the winning structure.`
+    image: 'https://images.unsplash.com/photo-1461344577544-4e5dc9487184?auto=format&fit=crop&w=800&q=80', // Long/Short: currency/stock market
+    description: `Our hedge fund operations primarily use a long-only strategy, but at strategic moments, we enable short trades, especially in currency markets. This approach has delivered over 503% gains in 3 years and over 5000% ROI over 15 years. Our winning structure is proven and here to stay.`
   },
   {
     category: 'MARKET',
-    title: 'Global ex-US equity',
+    title: 'Global ex-US Equity',
     date: 'Jan 19, 2026',
-    description: `This market size accounts for the rest of the 60% of the global size of the market. The US market accounts for 40% of listed assets on the worldwide exchange.\n\nThis market segment includes market in Asia, Europe and Africa. At eqfi invest, we trade all these markets especially the indexes of these various exchanges, taking position in long / short basis on the CFD markets and making markets across the nations.`
+    image: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=800&q=80', // Global ex-US: world map/markets
+    description: `Global ex-US equity markets account for 60% of the world's listed assets. We actively trade indexes in Asia, Europe, and Africa, taking both long and short positions in CFD markets and making markets across nations.`
   },
   {
     category: 'MARKET',
-    title: 'Nigeria equity',
+    title: 'Nigeria Equity',
     date: 'Jan 19, 2026',
-    description: `Eqfi invest home market is Nigeria. The firms is founded, managed and regulated and registered in Nigeria so we have an unrivalled access to the NGX through our certified trader who are authorised dealing clerks to the NGX.\n\nToday, market capitalization on the NGX exceed N100 Trillion Naira and is growing radically by capital appreciation and organic growth through new listings. We help with the onboarding and account opening for new clients in our position as sub-brokers to some trading licenses holders and we help to buy and sell the desired equities and stocks for the client or advice them on the strategic importance of their holdings and how they can make the most of it to fulfill their goals of being participants in this market.\n\nAt eqfi invest, we deal transparently and forthright with our clients and expect them to earn our trust in our dealings. Investment in NGX constitute up to 45% of total Asset Under Management (AUM) in Eqfi Universe. We dont take this market lightly.`
+    image: 'https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=800&q=80', // Nigeria equity: Nigerian Stock Exchange
+    description: `Nigeria is our home market. As registered and regulated sub-brokers, we provide unrivalled access to the NGX. We assist with onboarding, account opening, and strategic advice for clients, helping them maximize their holdings. NGX investments make up 45% of our total AUM.`
   },
   {
     category: 'MARKET',
     title: 'Emerging Market Equity',
     date: 'Jan 19, 2026',
-    description: `Through indexes as the MSCI emerging market index, we are able to assess risk and opportunities in emerging markets securities across board, real time. We buy undervalued securities and sell over valued securities based on premium market research and market intelligence we conduct that helps us to make the best and helpful decision on the portfolio in our care.`
+    image: 'https://images.unsplash.com/photo-1469122312224-c5846569feb1?auto=format&fit=crop&w=800&q=80', // Emerging markets: emerging market chart
+    description: `Using the MSCI Emerging Markets Index, we assess risks and opportunities in real time. Our research-driven approach allows us to buy undervalued and sell overvalued securities, optimizing client portfolios in dynamic markets.`
   },
   {
     category: 'MARKET',
-    title: 'US equities',
+    title: 'US Equities',
     date: 'Jan 19, 2026',
-    description: `At eqfi invest, investing in US equities is done daily and is very central to how we profit. The US equity markets within the normal exchange or through derivatives markets as the Contract for Difference (CFD) markets are very liquid and fulfils our basic requirements of ability to move volumes without noticeable depreciation in asset price and quality. This market fulfils that need so we trade it regularly. The indexes markets attached to this market has provided up to 67% of all returns on investment till date. It has been a success and we are guaranteed of future successes in the coming years.`
+    image: 'https://images.unsplash.com/photo-1518183214770-9cffbec72538?auto=format&fit=crop&w=800&q=80', // US equities: Wall Street sign
+    description: `US equities are central to our daily trading. The market's liquidity and depth allow us to move large volumes efficiently. US indexes have contributed up to 67% of our total ROI, and we expect continued success in this space.`
   }
 ];
 

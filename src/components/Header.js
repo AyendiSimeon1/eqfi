@@ -16,11 +16,24 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { name: 'Who We Are', href: '#' },
-    { name: 'Strategies', href: '#' },
-    { name: 'Insights', href: '#' },
-    { name: 'Careers', href: '#' },
+    { name: 'Who We Are', href: '#who-we-are' },
+    { name: 'Strategies', href: '#strategies' },
+    { name: 'Insights', href: '#insights' },
+    { name: 'Careers', href: '#careers' },
   ];
+
+  // Smooth scroll handler
+  const handleNavClick = (e, href) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const id = href.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      setIsOpen(false);
+    }
+  };
 
   return (
       <motion.nav
@@ -43,6 +56,7 @@ export default function Header() {
               <a 
                 key={link.name} 
                 href={link.href} 
+                onClick={e => handleNavClick(e, link.href)}
                 className="text-gray-100 hover:text-amber-500 text-lg font-extrabold uppercase tracking-widest transition-colors drop-shadow-lg"
               >
                 {link.name}
@@ -84,8 +98,8 @@ export default function Header() {
                   transition={{ delay: i * 0.1 }}
                   key={link.name}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
-                    className="text-gray-100 text-3xl font-extrabold font-display border-b border-gray-800 pb-4 flex justify-between items-center group"
+                  onClick={e => handleNavClick(e, link.href)}
+                  className="text-gray-100 text-3xl font-extrabold font-display border-b border-gray-800 pb-4 flex justify-between items-center group"
                 >
                   {link.name}
                   <span className="text-amber-500">→</span>

@@ -39,12 +39,13 @@ export default function InsightsGrid() {
         <div className="grid md:grid-cols-3 gap-8">
           {insights.map((item, i) => (
             <div key={i} className="group rounded-lg border border-gray-200 bg-white p-6 hover:shadow-lg transition">
-              <div className="aspect-video bg-gray-100 mb-4 overflow-hidden relative rounded-lg">
+              <div className="aspect-video bg-gray-100 mb-4 overflow-hidden relative rounded-lg flex items-center justify-center">
+                <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute top-2 left-2 bg-gray-900 text-[10px] text-amber-500 px-2 py-1 font-bold z-10 rounded">{item.category}</div>
-                <div className="w-full h-full bg-gradient-to-br from-gray-100 to-gray-200 group-hover:scale-110 transition-transform duration-500" />
               </div>
               <h4 className="text-lg font-extrabold text-gray-900 leading-snug group-hover:text-amber-500 transition-colors font-display">{item.title}</h4>
               <p className="text-gray-500 text-xs mt-2 uppercase">{item.date}</p>
+              <p className="text-gray-600 text-sm mt-4">{item.description}</p>
             </div>
           ))}
         </div>

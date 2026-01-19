@@ -42,12 +42,12 @@ export default function HomeClient() {
       </motion.div>
 
       {/* About/Trust/Partners section */}
-      <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.3 }}>
+      <motion.div id="who-we-are" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.3 }}>
         <AboutWealth />
       </motion.div>
 
-      {/* Services section (existing) */}
-      <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.4 }}>
+      {/* Services/Strategies section */}
+      <motion.div id="strategies" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.4 }}>
         <Services />
       </motion.div>
       <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.7 }}>
@@ -55,8 +55,13 @@ export default function HomeClient() {
       </motion.div>
 
       {/* Insights Grid section */}
-      <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.5 }}>
+      <motion.div id="insights" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.5 }}>
         <InsightGrid />
+      </motion.div>
+
+      {/* Careers section placeholder */}
+      <motion.div id="careers" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.8 }}>
+        <div className="py-32 text-center text-3xl text-gray-400 font-bold">Careers section coming soon</div>
       </motion.div>
 
     
@@ -158,7 +163,8 @@ export default function HomeClient() {
   <div className="border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between text-base md:text-lg text-gray-500 gap-3">
         <p>© 2025 Citadel Fisher Wealth Group. All rights reserved.</p>
-        <p>Regulated. Trusted. Global.</p>
+        <p>Regrn b uild
+          ulated. Trusted. Global.</p>
       </div>
   </div>
 </motion.footer>
