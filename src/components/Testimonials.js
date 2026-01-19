@@ -2,23 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const testimonials = [
-  {
-    name: 'Olivia R.',
-    quote: 'Citadel Fisher helped me grow my portfolio with confidence. Their team is world-class!',
-    title: 'Entrepreneur'
-  },
-  {
-    name: 'James T.',
-    quote: 'The strategies and insights are truly tailored. I feel secure about my financial future.',
-    title: 'Investor'
-  },
-  {
-    name: 'Aisha B.',
-    quote: 'Professional, creative, and always available. Highly recommended for wealth management.',
-    title: 'Executive'
-  }
-];
+
+import { testimonials } from '../data/landingContent';
 
 export default function Testimonials() {
   const [current, setCurrent] = useState(0);

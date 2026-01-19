@@ -18,7 +18,7 @@ const AboutWealth = () => {
           transition={{ type: 'spring', stiffness: 60, damping: 18, delay: 0.1 }}
           className="text-5xl md:text-6xl font-display font-extrabold mb-8 text-gray-900 leading-tight drop-shadow-lg"
         >
-          Why Choose Citadel Fisher?
+          About us / Who we are
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 60 }}
@@ -27,7 +27,7 @@ const AboutWealth = () => {
           transition={{ type: 'spring', stiffness: 60, damping: 18, delay: 0.2 }}
           className="max-w-2xl mx-auto mb-12 text-2xl text-gray-500 leading-relaxed font-medium"
         >
-          Trusted by thousands, EQFI delivers innovative wealth management, global reach, and personalized strategies. Our partners include leading financial institutions and our team is dedicated to your success.
+          {require('../data/landingContent').about.description}
         </motion.p>
         <div className="flex flex-wrap justify-center gap-10 mt-10">
           <motion.div

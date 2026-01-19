@@ -3,9 +3,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+import { leadership } from '../data/landingContent';
 const tabData = [
-  { id: 'client', label: 'Client-Focused', title: 'Our Clients Always Come First', text: 'We believe clients deserve simplicity and transparency. Every decision we make is rooted in your retirement goals.' },
-  { id: 'experience', label: 'Investment Experience', title: 'Deep Industry Experience', text: 'Our five-member Investment Policy Committee (IPC) has over 150 combined years of industry experience, ensuring stable and long-term leadership.' },
+  { id: 'leadership', label: 'Leadership', title: leadership[0].title, text: leadership[0].bio },
+  { id: 'client', label: 'Client-Focused', title: 'Our Clients Always Come First', text: 'We believe clients deserve simplicity and transparency. Every decision we make is rooted in your goals.' },
   { id: 'approach', label: 'Global Approach', title: 'Top-Down, Global Perspective', text: 'We analyze global drivers to identify opportunities across equity and fixed-income markets worldwide.' },
 ];
 
@@ -18,7 +19,7 @@ const awardImages = [
 ];
 
 export default function TrustTabs() {
-  const [activeTab, setActiveTab] = useState('experience');
+  const [activeTab, setActiveTab] = useState('leadership');
 
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 via-gray-200 to-gray-100 border-b border-gray-200">
@@ -74,12 +75,14 @@ export default function TrustTabs() {
               exit={{ opacity: 0, y: 60 }}
               transition={{ type: 'spring', stiffness: 60, damping: 18 }}
             >
-              <h3 className="text-3xl md:text-4xl font-display text-gray-900 font-extrabold mb-8 drop-shadow-lg">
-                {tabData.find(t => t.id === activeTab).title}
-              </h3>
-              <p className="text-gray-600 text-2xl leading-relaxed font-medium mb-10">
-                {tabData.find(t => t.id === activeTab).text}
-              </p>
+              {(() => {
+                const tab = tabData.find(t => t.id === activeTab);
+                if (!tab) return <div className="text-red-500">Tab not found</div>;
+                return <>
+                  <h3 className="text-3xl md:text-4xl font-display text-gray-900 font-extrabold mb-8 drop-shadow-lg">{tab.title}</h3>
+                  <p className="text-gray-600 text-2xl leading-relaxed font-medium mb-10">{tab.text}</p>
+                </>;
+              })()}
               <button className="bg-amber-500 text-black px-10 py-4 font-extrabold text-lg uppercase tracking-widest rounded shadow drop-shadow-lg">
                 Learn More
               </button>

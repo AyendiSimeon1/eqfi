@@ -1,11 +1,8 @@
 // components/InsightsGrid.js
 'use client'
 
-const insights = [
-  { category: 'EXPERT COMMENTARY', title: 'This Week in Review | Fed Independence', date: 'Jan 16, 2025' },
-  { category: 'ECONOMICS', title: 'Fretting Over Part-Time Work Trends', date: 'Jan 16, 2025' },
-  { category: 'POLITICS', title: 'Elections Incoming: Global Impacts', date: 'Jan 14, 2025' },
-];
+
+import { insights } from '../data/landingContent';
 
 export default function InsightsGrid() {
   return (

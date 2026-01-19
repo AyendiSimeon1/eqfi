@@ -2,12 +2,8 @@
 'use client'
 import { motion } from 'framer-motion';
 
-const services = [
-  { title: "Wealth Management", desc: "Holistic planning for high-net-worth individuals." },
-  { title: "Investment Management", desc: "Direct access to institutional-grade portfolios." },
-  { title: "Inheritance Planning", desc: "Preserving your legacy for the next generation." },
-  { title: "Portfolio Management", desc: "Active, data-driven equity and fixed-income strategies." }
-];
+
+import { services } from '../data/landingContent';
 
 export default function Services() {
   return (
