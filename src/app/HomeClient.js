@@ -1,18 +1,77 @@
-"use client";
-import Hero from '@/components/Hero';
-import Services from '@/components/Services';
-import MobileCallback from '@/components/MobileCallback';
-import Header from '@/components/Header';
-import Slider from '@/components/Slider';
-import Testimonials from '@/components/Testimonials';
-import AboutWealth from '@/components/AboutWealth';
-import InsightGrid from '@/components/InsightGrid';
-import TrustTab from '@/components/TrustTab';
+'use client'
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+import MobileCallback from '../components/MobileCallback';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Services from '../components/Services';
+import AboutWealth from '../components/AboutWealth';
+import InsightGrid from '../components/InsightGrid';
+import Testimonials from '../components/Testimonials';
+import TrustTab from '../components/TrustTab';
+
+function RequestCallbackForm() {
+  const [phone, setPhone] = useState("");
+  const [toast, setToast] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setToast("Thank you! We will contact you soon.");
+    setPhone("");
+    setTimeout(() => setToast(""), 3000);
+  };
+  return (
+    <div className="max-w-md mx-auto relative">
+      <div className="bg-gradient-to-br from-wealth-blue via-wealth-blueLight to-amber-100 p-10 rounded-3xl shadow-2xl text-wealth-blueDark border-2 border-amber-400/60">
+        <h3 className="text-3xl font-bold text-wealth-gold mb-2 text-center drop-shadow">Request a Call Back</h3>
+        <p className="text-base opacity-90 mb-6 text-center">Speak with a wealth advisor today about your portfolio.</p>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="flex flex-col gap-2">
+            <label htmlFor="phone" className="text-sm font-semibold text-wealth-blue">Phone Number</label>
+            <input
+              id="phone"
+              type="tel"
+              value={phone}
+              onChange={e => setPhone(e.target.value)}
+              placeholder="Your Phone Number"
+              required
+              className="w-full p-4 rounded-xl bg-white border-2 border-amber-300 focus:border-amber-500 placeholder:text-wealth-blue/60 text-wealth-blueDark outline-none text-lg shadow"
+            />
+          </div>
+          <button type="submit" className="w-full bg-gray-500 text-white font-bold py-4 rounded-xl uppercase tracking-widest text-base shadow-lg hover:bg-gray-600 transition-all">
+            Contact Me
+          </button>
+        </form>
+        {toast && (
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-[-60px] bg-amber-500 text-white px-6 py-3 rounded-xl shadow-lg font-semibold text-center animate-fade-in-out z-50">
+            {toast}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
 
 export default function HomeClient() {
   return (
     <main className="min-h-screen bg-wealth-blueLight font-body">
+      {/* Request Call Back Floating Button (Desktop) */}
+      <div className="hidden md:block fixed bottom-8 right-8 z-[100]">
+        <button
+          className="bg-gray-500 text-white font-bold py-4 px-8 rounded-full shadow-2xl text-lg uppercase tracking-widest hover:bg-gray-600 transition-all border-4 border-gray-400 outline outline-4 outline-gray-400/60"
+          style={{ boxShadow: '0 8px 32px 0 rgba(107, 114, 128, 0.25), 0 1.5px 8px 0 rgba(0,0,0,0.10)' }}
+          onClick={() => {
+            const el = document.getElementById('request-callback-form');
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }}
+        >
+          <span className="drop-shadow-lg">Request Call Back</span>
+        </button>
+      </div>
+
+      {/* Request Call Back Bar (Mobile) */}
+      <div className="md:hidden">
+        <MobileCallback />
+      </div>
       {/* Navigation */}
       <motion.nav
         className="fixed top-0 w-full z-50 bg-wealth-blueDark/95 backdrop-blur-md border-b border-wealth-blue py-4 px-6 flex justify-between items-center shadow-lg"
@@ -36,6 +95,19 @@ export default function HomeClient() {
         <Header />
       </motion.div>
 
+      {/* Request Call Back Floating Button (Desktop) */}
+      <div className="hidden md:block fixed bottom-8 right-8 z-[100]">
+        <button
+          className="bg-wealth-gold text-wealth-blueDark font-bold py-4 px-8 rounded-full shadow-2xl text-lg uppercase tracking-widest hover:bg-yellow-400 transition-all border-4 border-white"
+          onClick={() => {
+            const el = document.getElementById('request-callback-form');
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }}
+        >
+          Request Call Back
+        </button>
+      </div>
+
       {/* Animated Hero section */}
       <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.2 }}>
         <Hero />
@@ -45,6 +117,11 @@ export default function HomeClient() {
       <motion.div id="who-we-are" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.3 }}>
         <AboutWealth />
       </motion.div>
+
+      {/* Request Call Back Form Anchor (Desktop) */}
+      <div id="request-callback-form" className="hidden md:block pt-32">
+        <RequestCallbackForm />
+      </div>
 
       {/* Services/Strategies section */}
       <motion.div id="strategies" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.4 }}>

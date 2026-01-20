@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <meta name="description" content="EQFI Invest - Professional wealth management, investment strategies, and financial planning for individuals and institutions." />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased font-segoe`}
       >
         {children}
       </body>
