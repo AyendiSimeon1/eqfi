@@ -19,7 +19,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Who We Are', href: '/who-we-are' },
     { name: 'Strategies', href: '/strategies' },
-    { name: 'Insights', href: '/insights' },
+    { name: 'Insights', href: '#insights' },
     { name: 'Careers', href: '/careers' },
   ];
 
@@ -71,9 +71,9 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
-            <button className="bg-amber-500 text-black hover:bg-amber-400 px-8 py-3 text-lg font-extrabold uppercase tracking-widest rounded transition-all drop-shadow-lg">
+            {/* <button className="bg-amber-500 text-black hover:bg-amber-400 px-8 py-3 text-lg font-extrabold uppercase tracking-widest rounded transition-all drop-shadow-lg">
               Client Login
-            </button>
+            </button> */}
         </div>
 
         {/* Mobile Toggle Button */}

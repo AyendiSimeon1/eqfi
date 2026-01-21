@@ -102,10 +102,7 @@ export default function HomeClient() {
         <InsightGrid />
       </motion.div>
 
-      {/* Careers section placeholder */}
-      <motion.div id="careers" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.8 }}>
-        <div className="py-32 text-center text-3xl text-gray-400 font-bold">Careers section coming soon</div>
-      </motion.div>
+      
 
     
       {/* Strategies Slider section */}
@@ -180,8 +177,8 @@ export default function HomeClient() {
 
         <div className="text-base md:text-lg space-y-2 text-gray-400">
           <p>Global Offices</p>
-          <p>+234 906 485 2460</p>
-          <p>info@eqfi.com</p>
+          <p>+234 903 182 6250</p>
+          <p>info@eqfiinvest.com</p>
           <p>Mon–Fri, 8:00 – 18:00</p>
         </div>
 

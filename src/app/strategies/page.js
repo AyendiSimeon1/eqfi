@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion';
 import Header from '../../components/Header';
-import { services } from '../../data/landingContent';
+import { services, insights } from '../../data/landingContent';
 
 const StrategiesHero = () => {
   return (
@@ -85,28 +85,116 @@ const ServiceCard = ({ service, index }) => {
   );
 };
 
-const ServicesOverview = () => {
+const InsightsSection = () => {
   return (
-    <section className="py-24 px-8 md:px-24 bg-[#001a41] text-white">
-      <div className="max-w-7xl mx-auto text-center">
-        <motion.h2 
+    <section className="bg-gray-50 border-b border-gray-200 py-24">
+      {/* How We Can Help Section */}
+      <div className="container mx-auto px-6 mb-24">
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-6xl font-serif mb-8"
+          className="text-4xl md:text-6xl font-serif font-extrabold mb-16 text-[#1e4ba1] leading-tight"
         >
-          Our Investment Approach
+          How We Can Help
         </motion.h2>
-        <motion.p 
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
-        >
-          At EQFI, we combine expertise, innovation, and personalized strategies to help you achieve your financial objectives.
-          Our comprehensive suite of services ensures your wealth grows sustainably.
-        </motion.p>
+        <div className="grid md:grid-cols-2 gap-12">
+          {[
+            {
+              title: 'Personal Wealth Management',
+              description: 'Tailored strategies and institutional-grade portfolio management for global impact.',
+              image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80'
+            },
+            {
+              title: 'Institutional Investing',
+              description: 'Advanced investment solutions for institutional clients with sophisticated risk management.',
+              image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80'
+            }
+          ].map((service, i) => (
+            <motion.div
+              key={service.title}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.2 }}
+              className="group cursor-pointer rounded-xl border border-gray-200 bg-white p-8 hover:shadow-2xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="aspect-[16/9] bg-gray-200 mb-8 overflow-hidden rounded-lg relative">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              </div>
+              <h3 className="text-2xl md:text-3xl font-serif font-extrabold mb-4 text-[#1e4ba1] group-hover:text-blue-600 transition-colors leading-tight">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 mb-6 max-w-md text-lg leading-relaxed">
+                {service.description}
+              </p>
+              <button className="bg-[#1e4ba1] text-white px-6 py-3 font-semibold hover:bg-blue-800 transition-colors rounded-lg shadow-lg hover:shadow-xl">
+                Explore Services
+              </button>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
+      {/* Insights & Media Section */}
+      <div className="container mx-auto px-6">
+        <div className="flex justify-between items-center mb-16 border-b border-gray-200 pb-6">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-serif font-extrabold text-[#1e4ba1]"
+          >
+            Insights & Media
+          </motion.h2>
+          <motion.button
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="text-[#1e4ba1] font-bold text-lg uppercase tracking-widest hover:text-blue-600 transition-colors flex items-center gap-2"
+          >
+            See More
+            <span className="text-2xl">→</span>
+          </motion.button>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {insights.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              className="group rounded-xl border border-gray-200 bg-white p-8 hover:shadow-2xl transition-all duration-300 overflow-hidden"
+            >
+              <div className="aspect-video bg-gray-100 mb-6 overflow-hidden relative rounded-lg">
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute top-4 left-4 bg-[#1e4ba1] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                  {item.category}
+                </div>
+              </div>
+              <h4 className="text-xl md:text-2xl font-serif font-extrabold text-[#1e4ba1] leading-snug group-hover:text-blue-600 transition-colors mb-2">
+                {item.title}
+              </h4>
+              <p className="text-gray-500 text-sm uppercase font-semibold mb-4 tracking-wider">
+                {item.date}
+              </p>
+              <p className="text-gray-700 text-base leading-relaxed">
+                {item.description}
+              </p>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -122,7 +210,7 @@ export default function Strategies() {
         <ServiceCard key={service.title} service={service} index={index} />
       ))}
       
-      <ServicesOverview />
+      <InsightsSection />
       
       <motion.footer
         className="bg-[#0B0F14] text-gray-300 border-t border-white/5"
