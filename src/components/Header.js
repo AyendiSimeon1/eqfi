@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,10 +17,10 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { name: 'Who We Are', href: '#who-we-are' },
-    { name: 'Strategies', href: '#strategies' },
-    { name: 'Insights', href: '#insights' },
-    { name: 'Careers', href: '#careers' },
+    { name: 'Who We Are', href: '/who-we-are' },
+    { name: 'Strategies', href: '/strategies' },
+    { name: 'Insights', href: '/insights' },
+    { name: 'Careers', href: '/careers' },
   ];
 
   // Smooth scroll handler
@@ -47,20 +48,28 @@ export default function Header() {
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo - Citadel Style Boldness */}
         <div className="flex items-center gap-3">
-            <img src="/eqfi-logo.jpg" alt="EQFI Logo" className="h-12 w-auto object-contain" />
+            <Link href="/">
+                <img src="/eqfi-logo.jpg" alt="EQFI Logo" className="h-12 w-auto object-contain" />
+            </Link>
         </div>
 
         {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-12">
             {navLinks.map((link) => (
-              <a 
+              <Link 
                 key={link.name} 
-                href={link.href} 
-                onClick={e => handleNavClick(e, link.href)}
+                href={link.href}
                 className="text-gray-100 hover:text-amber-500 text-lg font-extrabold uppercase tracking-widest transition-colors drop-shadow-lg"
+                onClick={(e) => {
+                  // Prevent default only for hash links
+                  if (link.href.startsWith('#')) {
+                    e.preventDefault();
+                    handleNavClick(e, link.href);
+                  }
+                }}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <button className="bg-amber-500 text-black hover:bg-amber-400 px-8 py-3 text-lg font-extrabold uppercase tracking-widest rounded transition-all drop-shadow-lg">
               Client Login
@@ -92,18 +101,30 @@ export default function Header() {
           >
             <div className="flex flex-col gap-8 mt-20">
               {navLinks.map((link, i) => (
-                <motion.a
+                <motion.div
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.1 }}
                   key={link.name}
-                  href={link.href}
-                  onClick={e => handleNavClick(e, link.href)}
-                  className="text-gray-100 text-3xl font-extrabold font-display border-b border-gray-800 pb-4 flex justify-between items-center group"
                 >
-                  {link.name}
-                  <span className="text-amber-500">→</span>
-                </motion.a>
+                  <Link
+                    href={link.href}
+                    className="text-gray-100 text-3xl font-extrabold font-display border-b border-gray-800 pb-4 flex justify-between items-center group"
+                    onClick={(e) => {
+                      // Prevent default only for hash links
+                      if (link.href.startsWith('#')) {
+                        e.preventDefault();
+                        handleNavClick(e, link.href);
+                        setIsOpen(false);
+                      } else {
+                        setIsOpen(false);
+                      }
+                    }}
+                  >
+                    {link.name}
+                    <span className="text-amber-500">→</span>
+                  </Link>
+                </motion.div>
               ))}
               
               <motion.button 

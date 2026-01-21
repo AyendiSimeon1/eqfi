@@ -1,6 +1,8 @@
 'use client'
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import MobileCallback from '../components/MobileCallback';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
@@ -10,48 +12,40 @@ import InsightGrid from '../components/InsightGrid';
 import Testimonials from '../components/Testimonials';
 import TrustTab from '../components/TrustTab';
 
-function RequestCallbackForm() {
-  const [phone, setPhone] = useState("");
-  const [toast, setToast] = useState("");
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setToast("Thank you! We will contact you soon.");
-    setPhone("");
-    setTimeout(() => setToast(""), 3000);
-  };
+const PlanCTA = () => {
+  const router = useRouter();
   return (
-    <div className="max-w-md mx-auto relative">
-      <div className="bg-gradient-to-br from-wealth-blue via-wealth-blueLight to-amber-100 p-10 rounded-3xl shadow-2xl text-wealth-blueDark border-2 border-amber-400/60">
-        <h3 className="text-3xl font-bold text-wealth-gold mb-2 text-center drop-shadow">Request a Call Back</h3>
-        <p className="text-base opacity-90 mb-6 text-center">Speak with a wealth advisor today about your portfolio.</p>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="flex flex-col gap-2">
-            <label htmlFor="phone" className="text-sm font-semibold text-wealth-blue">Phone Number</label>
-            <input
-              id="phone"
-              type="tel"
-              value={phone}
-              onChange={e => setPhone(e.target.value)}
-              placeholder="Your Phone Number"
-              required
-              className="w-full p-4 rounded-xl bg-white border-2 border-amber-300 focus:border-amber-500 placeholder:text-wealth-blue/60 text-wealth-blueDark outline-none text-lg shadow"
-            />
-          </div>
-          <button type="submit" className="w-full bg-gray-500 text-white font-bold py-4 rounded-xl uppercase tracking-widest text-base shadow-lg hover:bg-gray-600 transition-all">
-            Contact Me
+    <section id="request-callback-form" className="bg-[#003366] pt-32 pb-16 px-4">
+      <motion.div 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="max-w-4xl mx-auto text-center text-white"
+      >
+        <h2 className="text-3xl md:text-4xl font-light mb-4">
+          Want to talk about your plans?
+        </h2>
+        <p className="text-lg mb-10 font-light opacity-90">
+          Speak to us and see how we can help you achieve your goals
+        </p>
+        
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <button onClick={() => router.push('/contact')} className="border border-white px-8 py-3 flex items-center justify-center gap-2 hover:bg-white hover:text-[#003366] transition-colors duration-300">
+            Request a callback
+            <span className="text-xl">📞</span>
           </button>
-        </form>
-        {toast && (
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-[-60px] bg-amber-500 text-white px-6 py-3 rounded-xl shadow-lg font-semibold text-center animate-fade-in-out z-50">
-            {toast}
-          </div>
-        )}
-      </div>
-    </div>
+          <button onClick={() => router.push('/offices')} className="border border-white px-8 py-3 flex items-center justify-center gap-2 hover:bg-white hover:text-[#003366] transition-colors duration-300">
+            Find an office
+            <span className="text-xl">📍</span>
+          </button>
+        </div>
+      </motion.div>
+    </section>
   );
-}
+};
 
 export default function HomeClient() {
+  const router = useRouter();
   return (
     <main className="min-h-screen bg-wealth-blueLight font-body">
       {/* Request Call Back Floating Button (Desktop) */}
@@ -59,10 +53,7 @@ export default function HomeClient() {
         <button
           className="bg-gray-500 text-white font-bold py-4 px-8 rounded-full shadow-2xl text-lg uppercase tracking-widest hover:bg-gray-600 transition-all border-4 border-gray-400 outline outline-4 outline-gray-400/60"
           style={{ boxShadow: '0 8px 32px 0 rgba(107, 114, 128, 0.25), 0 1.5px 8px 0 rgba(0,0,0,0.10)' }}
-          onClick={() => {
-            const el = document.getElementById('request-callback-form');
-            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }}
+          onClick={() => router.push('/contact')}
         >
           <span className="drop-shadow-lg">Request Call Back</span>
         </button>
@@ -72,23 +63,6 @@ export default function HomeClient() {
       <div className="md:hidden">
         <MobileCallback />
       </div>
-      {/* Navigation */}
-      <motion.nav
-        className="fixed top-0 w-full z-50 bg-wealth-blueDark/95 backdrop-blur-md border-b border-wealth-blue py-4 px-6 flex justify-between items-center shadow-lg"
-        initial={{ y: -60, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-      >
-        <div className="text-wealth-blue font-display text-2xl font-bold tracking-tighter">
-           <span className="text-wealth-gold">EQFI</span>
-        </div>
-        <div className="hidden md:flex gap-8 text-wealth-blueLight text-sm font-medium uppercase tracking-widest">
-          <a href="#" className="hover:text-wealth-gold transition">Who We Are</a>
-          <a href="#" className="hover:text-wealth-gold transition">Strategies</a>
-          <a href="#" className="hover:text-wealth-gold transition">Insights</a>
-          <a href="#" className="bg-wealth-blue px-4 py-2 text-white rounded shadow hover:bg-wealth-gold hover:text-wealth-blueDark transition">Client Login</a>
-        </div>
-      </motion.nav>
 
       {/* Integrated Header component */}
       <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.1 }}>
@@ -99,10 +73,7 @@ export default function HomeClient() {
       <div className="hidden md:block fixed bottom-8 right-8 z-[100]">
         <button
           className="bg-wealth-gold text-wealth-blueDark font-bold py-4 px-8 rounded-full shadow-2xl text-lg uppercase tracking-widest hover:bg-yellow-400 transition-all border-4 border-white"
-          onClick={() => {
-            const el = document.getElementById('request-callback-form');
-            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          }}
+          onClick={() => router.push('/contact')}
         >
           Request Call Back
         </button>
@@ -113,14 +84,9 @@ export default function HomeClient() {
         <Hero />
       </motion.div>
 
-      {/* About/Trust/Partners section */}
-      <motion.div id="who-we-are" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.3 }}>
-        <AboutWealth />
-      </motion.div>
-
       {/* Request Call Back Form Anchor (Desktop) */}
-      <div id="request-callback-form" className="hidden md:block pt-32">
-        <RequestCallbackForm />
+      <div className="hidden md:block">
+        <PlanCTA />
       </div>
 
       {/* Services/Strategies section */}
@@ -239,9 +205,8 @@ export default function HomeClient() {
   {/* Bottom Bar */}
   <div className="border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between text-base md:text-lg text-gray-500 gap-3">
-        <p>© 2025 Citadel Fisher Wealth Group. All rights reserved.</p>
-        <p>Regrn b uild
-          ulated. Trusted. Global.</p>
+        <p>© 2025 EQFI. All rights reserved.</p>
+        
       </div>
   </div>
 </motion.footer>

@@ -1,14 +1,16 @@
 // components/Services.js
 'use client'
 import { motion } from 'framer-motion';
-
+import { useRouter } from 'next/navigation';
 
 import { services } from '../data/landingContent';
 
 export default function Services() {
+  const router = useRouter();
   return (
     <section className="py-28 bg-gray-50 border-b border-gray-200">
       <div className="container mx-auto px-6">
+        <h1 className="text-gray-900 text-5xl md:text-6xl font-display font-extrabold mb-6 leading-tight drop-shadow-lg">Strategies</h1>
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -41,12 +43,13 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ type: 'spring', stiffness: 60, damping: 18, delay: 0.3 }}
+            onClick={() => router.push('/strategies')}
             className="bg-gray-900 text-white hover:bg-gray-800 px-10 py-5 rounded font-extrabold uppercase text-lg tracking-widest transition-all shadow drop-shadow-lg"
           >
             See All Services
           </motion.button>
         </motion.div>
-
+{/* 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {services.map((item, i) => (
             <motion.div 
@@ -63,7 +66,7 @@ export default function Services() {
               <p className="text-gray-500 text-xl leading-relaxed font-medium">{item.desc}</p>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
