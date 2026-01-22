@@ -11,6 +11,7 @@ import AboutWealth from '../components/AboutWealth';
 import InsightGrid from '../components/InsightGrid';
 import Testimonials from '../components/Testimonials';
 import TrustTab from '../components/TrustTab';
+import NewsFeed from '../components/NewsFeed';
 
 const PlanCTA = () => {
   const router = useRouter();
@@ -102,10 +103,10 @@ export default function HomeClient() {
         <InsightGrid />
       </motion.div>
 
-      
-
-    
-      {/* Strategies Slider section */}
+      {/* News Feed section */}
+      <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.6 }}>
+        <NewsFeed />
+      </motion.div>
       {/* <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.6 }}>
         <Slider />
       </motion.div> */}
