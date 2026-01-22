@@ -127,6 +127,32 @@ const LeadershipSection = () => {
   );
 };
 
+const LocationSection = () => {
+  return (
+    <section className="py-24 px-8 md:px-24 bg-white">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-[#1e4ba1] text-6xl font-serif leading-tight mb-16">
+          Location
+        </h2>
+        <div className="grid md:grid-cols-2 gap-12">
+          <div>
+            <h3 className="text-2xl font-semibold text-[#1e4ba1] mb-4">Lagos</h3>
+            <p className="text-gray-600 leading-relaxed text-lg">
+              36B, Moses Ogungbeye Str, Olowoira, ikeja, Lagos
+            </p>
+          </div>
+          <div>
+            <h3 className="text-2xl font-semibold text-[#1e4ba1] mb-4">Abuja</h3>
+            <p className="text-gray-600 leading-relaxed text-lg">
+              643, Parakou Cresent, Wuse 11, Abuja, Nigeria
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 export default function WhoWeAre() {
   return (
     <main className="min-h-screen bg-wealth-blueLight font-body">
@@ -136,6 +162,7 @@ export default function WhoWeAre() {
 
       {/* <AboutWealth /> */}
          <LeadershipSection />
+         <LocationSection />
     
       
    

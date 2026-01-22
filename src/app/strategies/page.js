@@ -210,7 +210,7 @@ export default function Strategies() {
         <ServiceCard key={service.title} service={service} index={index} />
       ))}
       
-      <InsightsSection />
+      {/* <InsightsSection /> */}
       
       <motion.footer
         className="bg-[#0B0F14] text-gray-300 border-t border-white/5"

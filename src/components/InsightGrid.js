@@ -8,7 +8,7 @@ export default function InsightsGrid() {
   return (
     <section className="bg-gray-50 border-b border-gray-200">
       {/* Top Help Section */}
-      <div className="bg-white py-24 text-gray-900 border-b border-gray-200">
+      {/* <div className="bg-white py-24 text-gray-900 border-b border-gray-200">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-display font-extrabold mb-16 text-gray-900 leading-tight">How We Can Help</h2>
           <div className="grid md:grid-cols-2 gap-10">
@@ -27,12 +27,12 @@ export default function InsightsGrid() {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Media Feed */}
       <div className="container mx-auto px-6 py-24">
         <div className="flex justify-between items-center mb-12 border-b border-gray-200 pb-4">
-          <h2 className="text-3xl font-display font-extrabold text-gray-900">Insights & Media</h2>
+          <h2 className="text-3xl font-display font-extrabold text-gray-900">Strategies for achieving alphas</h2>
           <button className="text-amber-500 font-bold text-sm uppercase">See More →</button>
         </div>
         
