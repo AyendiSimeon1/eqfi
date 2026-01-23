@@ -88,7 +88,7 @@ export default function Hero() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16">
-          <StatBox label="Assets Managed" value={{ countUp: true, to: 6500000, duration: 2, prefix: '$', suffix: 'M+' }} />
+          <StatBox label="Assets Managed" value={{ countUp: true, to: 6500, duration: 2, prefix: '$', suffix: 'M+' }} />
           <StatBox label="Investment Professionals" value={{ countUp: true, to: 265, duration: 1.5, suffix: '+' }} />
           <StatBox label="Countries Represented" value={{ countUp: true, to: 100, duration: 1.5, suffix: '+' }} />
         </div>

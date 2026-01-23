@@ -21,6 +21,7 @@ export default function Header() {
     { name: 'Strategies', href: '/strategies' },
     { name: 'Insights', href: '#insights' },
     { name: 'Careers', href: '/careers' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   // Smooth scroll handler

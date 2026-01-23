@@ -33,9 +33,15 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ type: 'spring', stiffness: 60, damping: 18, delay: 0.2 }}
-              className="text-gray-500 text-2xl leading-relaxed font-medium mb-2"
+              className="text-gray-500 text-2xl leading-relaxed font-medium mb-6"
             >
-              Our five-member Investment Policy Committee brings 150+ years of combined experience.
+              Our wealth management desk offers great advice to our clients that has lead to transformations in their investment in terms of quality of assets the advices has gone on to acquire.  
+We believe in quality of asset with intangible moats than in bargain hunting. 
+
+Factors as Price to book value are important to us as value investors but we have also, in our utmost search for quality bought quality assets at premium and held them invariably in the certain hope that over time, the reward for quality asset far outstripe a bargain that is also "a fair company at a fair price " as credited to investing legend, Charlie Munger of Berkshire Hathaway Inc.
+Without better-than-average returns or our culture of beating the NGX All Share, either in frontier market Nigeria or in other developed markets that we trade in,  we will not have a claim to leadership.
+
+We are excited at what we are achieving now, and what the future brings.
             </motion.p>
           </div>
           <motion.button
