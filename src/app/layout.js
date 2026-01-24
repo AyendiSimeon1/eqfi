@@ -15,6 +15,9 @@ export const metadata = {
   title: "EQFI Invest | Wealth & Investment Management",
   description: "EQFI Invest - Professional wealth management, investment strategies, and financial planning for individuals and institutions.",
   viewport: "width=device-width, initial-scale=1, maximum-scale=5",
+};
+
+export const viewport = {
   themeColor: "#003366",
 };
 

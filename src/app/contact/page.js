@@ -77,7 +77,7 @@ const ContactHero = () => {
           <h2 className="text-3xl md:text-4xl font-light text-[#003366] mb-6 md:mb-8">How can we help?</h2>
 
           <p className="text-gray-600 text-base md:text-lg mb-6 md:mb-8 px-4">
-            If you have any questions or would like to get in touch, submit a callback request below and one of our teams will contact you as soon as possible.
+            If you have any questions or would like to get in touch, submit a callback request below and one of our teams will contact you as soon as possible
           </p>
 
           <div className="text-gray-600 text-sm md:text-base mb-8 md:mb-12">
@@ -124,6 +124,12 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitMessage('');
+
+    if (!supabase) {
+      setSubmitMessage('Service temporarily unavailable. Please try again later.');
+      setIsSubmitting(false);
+      return;
+    }
 
     try {
       const { data, error } = await supabase
