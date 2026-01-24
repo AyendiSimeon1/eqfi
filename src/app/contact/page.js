@@ -89,7 +89,7 @@ const ContactHero = () => {
             </p>
             <p>
               If you are an existing client, please speak to your usual contact or call your
-              <a href="#" className="text-blue-800 underline ml-1">local office</a>.
+              <a href="#" className="text-blue-800 underline ml-1">local office</a>
             </p>
           </div>
 
