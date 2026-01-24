@@ -57,10 +57,10 @@ const ServiceCard = ({ service, index }) => {
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
         <div className={`order-2 lg:${index % 2 === 0 ? 'order-1' : 'order-2'}`}>
-          <h2 className="text-[#1e4ba1] text-3xl md:text-4xl lg:text-5xl font-serif mb-6 md:mb-8 leading-tight">
+          <h2 className="text-[#1e4ba1] text-2xl md:text-3xl lg:text-4xl font-serif font-light mb-4 md:mb-6 leading-tight">
             {service.title}
           </h2>
-          <div className="text-gray-700 leading-relaxed text-base md:text-lg space-y-3 md:space-y-4">
+          <div className="text-gray-700 leading-relaxed text-base md:text-lg space-y-3 md:space-y-4 font-light">
             {service.desc.split('\n\n').map((paragraph, i) => (
               <p key={i}>{paragraph}</p>
             ))}
@@ -94,7 +94,7 @@ const InsightsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl lg:text-6xl font-serif font-extrabold mb-12 md:mb-16 text-[#1e4ba1] leading-tight text-center md:text-left"
+          className="text-2xl md:text-3xl lg:text-4xl font-serif font-light mb-4 md:mb-6 text-[#1e4ba1] leading-tight text-center md:text-left"
         >
           How We Can Help
         </motion.h2>
@@ -127,10 +127,10 @@ const InsightsSection = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <h3 className="text-xl md:text-2xl lg:text-3xl font-serif font-extrabold mb-3 md:mb-4 text-[#1e4ba1] group-hover:text-blue-600 transition-colors leading-tight">
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-serif font-light mb-4 md:mb-6 text-[#1e4ba1] group-hover:text-blue-600 transition-colors leading-tight">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mb-4 md:mb-6 max-w-md text-base md:text-lg leading-relaxed">
+              <p className="text-gray-600 mb-4 md:mb-6 max-w-md text-base md:text-lg leading-relaxed font-light">
                 {service.description}
               </p>
               <button className="bg-[#1e4ba1] text-white px-6 py-3 font-semibold hover:bg-blue-800 transition-colors rounded-lg shadow-lg hover:shadow-xl w-full md:w-auto">
@@ -148,7 +148,7 @@ const InsightsSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl lg:text-5xl font-serif font-extrabold text-[#1e4ba1] text-center md:text-left"
+            className="text-2xl md:text-3xl lg:text-4xl font-serif font-light text-[#1e4ba1] text-center md:text-left"
           >
             Insights & Media
           </motion.h2>
@@ -183,13 +183,13 @@ const InsightsSection = () => {
                   {item.category}
                 </div>
               </div>
-              <h4 className="text-lg md:text-xl lg:text-2xl font-serif font-extrabold text-[#1e4ba1] leading-snug group-hover:text-blue-600 transition-colors mb-2">
+              <h4 className="text-lg md:text-xl lg:text-2xl font-serif font-light text-[#1e4ba1] leading-snug group-hover:text-blue-600 transition-colors mb-2">
                 {item.title}
               </h4>
               <p className="text-gray-500 text-xs md:text-sm uppercase font-semibold mb-3 md:mb-4 tracking-wider">
                 {item.date}
               </p>
-              <p className="text-gray-700 text-sm md:text-base leading-relaxed">
+              <p className="text-gray-700 text-base md:text-lg leading-relaxed font-light">
                 {item.description}
               </p>
             </motion.div>
@@ -214,7 +214,7 @@ export default function Strategies() {
       <section className="bg-gray-50 border-b border-gray-200 py-16 md:py-24">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 md:mb-12 border-b border-gray-200 pb-4 gap-4">
-            <h2 className="text-2xl md:text-3xl font-display font-extrabold text-gray-900 text-center md:text-left">Strategies for achieving alphas</h2>
+            <h2 className="text-2xl md:text-3xl font-display font-light text-gray-900 text-center md:text-left">Strategies for achieving alphas</h2>
             <button className="text-amber-500 font-bold text-sm uppercase mx-auto md:mx-0">See More →</button>
           </div>
 
@@ -232,9 +232,9 @@ export default function Strategies() {
                   <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute top-2 left-2 bg-gray-900 text-[10px] text-amber-500 px-2 py-1 font-bold z-10 rounded">{item.category}</div>
                 </div>
-                <h4 className="text-base md:text-lg font-extrabold text-gray-900 leading-snug group-hover:text-amber-500 transition-colors font-display">{item.title}</h4>
+                <h4 className="text-base md:text-lg font-extrabold text-gray-900 leading-snug group-hover:text-amber-500 transition-colors font-display font-light">{item.title}</h4>
                 <p className="text-gray-500 text-xs mt-2 uppercase">{item.date}</p>
-                <p className="text-gray-600 text-sm mt-3 md:mt-4">{item.description}</p>
+                <p className="text-gray-600 text-base md:text-lg mt-3 md:mt-4 font-light">{item.description}</p>
               </motion.div>
             ))}
           </div>

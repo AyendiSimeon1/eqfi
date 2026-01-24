@@ -24,7 +24,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ type: 'spring', stiffness: 60, damping: 18, delay: 0.1 }}
-              className="text-gray-900 text-5xl md:text-6xl font-display font-extrabold mb-6 leading-tight drop-shadow-lg"
+              className="text-gray-900 text-2xl md:text-3xl lg:text-4xl font-display font-light mb-4 md:mb-6 leading-tight drop-shadow-lg"
             >
               Structured to Always Put Your Interests First
             </motion.h2>
@@ -33,7 +33,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ type: 'spring', stiffness: 60, damping: 18, delay: 0.2 }}
-              className="text-gray-500 text-2xl leading-relaxed font-medium mb-6"
+              className="text-gray-500 text-base md:text-lg leading-relaxed font-light mb-6"
             >
               Our wealth management desk offers great advice to our clients that has lead to transformations in their investment in terms of quality of assets the advices has gone on to acquire.  
 We believe in quality of asset with intangible moats than in bargain hunting. 

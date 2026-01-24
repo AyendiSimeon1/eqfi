@@ -87,9 +87,10 @@ export default function Hero() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16">
-          <StatBox label="Assets Managed" value={{ countUp: true, to: 6500, duration: 2, prefix: '$', suffix: 'M+' }} />
-          <StatBox label="Investment Professionals" value={{ countUp: true, to: 265, duration: 1.5, suffix: '+' }} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mt-16">
+          <StatBox label="Assets Managed" value="$1.5M" />
+          <StatBox label="Investment Committee" value="4" />
+          <StatBox label="Advanced Degree Holders Employed" value="4" />
           <StatBox label="Countries Represented" value={{ countUp: true, to: 100, duration: 1.5, suffix: '+' }} />
         </div>
       </div>

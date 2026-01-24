@@ -60,7 +60,7 @@ export default function Header() {
               <Link 
                 key={link.name} 
                 href={link.href}
-                className="text-gray-100 hover:text-amber-500 text-lg font-extrabold uppercase tracking-widest transition-colors drop-shadow-lg"
+                className="text-gray-100 hover:text-transparent hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-600 hover:bg-clip-text text-lg font-body uppercase tracking-widest transition-all duration-300 drop-shadow-lg"
                 onClick={(e) => {
                   // Prevent default only for hash links
                   if (link.href.startsWith('#')) {
@@ -110,7 +110,7 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="text-gray-100 text-3xl font-extrabold font-display border-b border-gray-800 pb-4 flex justify-between items-center group"
+                    className="text-gray-100 text-3xl font-body border-b border-gray-800 pb-4 flex justify-between items-center group hover:text-amber-400 transition-colors"
                     onClick={(e) => {
                       // Prevent default only for hash links
                       if (link.href.startsWith('#')) {
@@ -123,7 +123,7 @@ export default function Header() {
                     }}
                   >
                     {link.name}
-                    <span className="text-amber-500">→</span>
+                    <span className="text-amber-500 group-hover:translate-x-2 transition-transform">→</span>
                   </Link>
                 </motion.div>
               ))}
@@ -132,7 +132,7 @@ export default function Header() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                  className="mt-4 bg-amber-500 text-black py-5 text-2xl font-extrabold uppercase tracking-widest rounded shadow"
+                  className="mt-4 bg-gradient-to-r from-amber-500 to-amber-600 text-black py-5 text-2xl font-body uppercase tracking-widest rounded shadow-lg hover:shadow-amber-500/25 transition-all"
               >
                 Request Call Back
               </motion.button>

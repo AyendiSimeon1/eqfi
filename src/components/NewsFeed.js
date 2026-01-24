@@ -41,7 +41,7 @@ const NewsFeed = () => {
     return (
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8 text-[#003366]">Latest Investing News</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-center mb-4 md:mb-6 text-[#003366]">Latest Investing News</h2>
           <div className="text-center">Loading news...</div>
         </div>
       </section>
@@ -52,7 +52,7 @@ const NewsFeed = () => {
     return (
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8 text-[#003366]">Latest Investing News</h2>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-center mb-4 md:mb-6 text-[#003366]">Latest Investing News</h2>
           <div className="text-center text-red-500">{error}</div>
         </div>
       </section>
@@ -66,7 +66,7 @@ const NewsFeed = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-center mb-8 text-[#003366]"
+          className="text-2xl md:text-3xl lg:text-4xl font-light text-center mb-4 md:mb-6 text-[#003366]"
         >
           Latest Investing News
         </motion.h2>
@@ -86,7 +86,7 @@ const NewsFeed = () => {
                   {item.title}
                 </a>
               </h3>
-              <p className="text-gray-600 text-sm mb-3 overflow-hidden" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
+              <p className="text-gray-600 text-base md:text-lg mb-3 overflow-hidden font-light" style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}>
                 {item.description}
               </p>
               <div className="text-xs text-gray-500">
