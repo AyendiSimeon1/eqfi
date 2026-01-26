@@ -120,7 +120,7 @@ export default function Offices() {
 
             <div className="text-base md:text-lg space-y-2 text-gray-400">
               <p>Global Offices</p>
-              <p>+234 906 485 2460</p>
+              <p>+234 903 182 6250</p>
               <p>info@eqfi.com</p>
               <p>Mon–Fri, 8:00 – 18:00</p>
             </div>
@@ -145,7 +145,7 @@ export default function Offices() {
         {/* Bottom Bar */}
         <div className="border-t border-white/5">
           <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between text-base md:text-lg text-gray-500 gap-3">
-            <p>© 2025 Citadel Fisher Wealth Group. All rights reserved.</p>
+            <p>© 2026 EQFI. All rights reserved.</p>
             <p>Regulated. Trusted. Global.</p>
           </div>
         </div>
