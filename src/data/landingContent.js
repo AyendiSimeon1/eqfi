@@ -4,7 +4,7 @@
 export const services = [
   {
     title: "Wealth Management",
-    desc: `People invest for many reasons: to grow their wealth, finance a lifestyle, build a legacy, seek a higher standard of living and several other reasons. At Eqfi invest, we understand all these reasons and we take them into planning the right mix of assets for our clients as they go forward with us.
+    desc: `People invest for many reasons: to grow their wealth, finance a lifestyle, build a legacy, seek a higher standard of living and several other reasons. At eqfi invest, we understand all these reasons and we take them into planning the right mix of assets for our clients as they go forward with us.
 
 We seek the best in class and best reasonable possibilities for your money to keep growing.
 
@@ -12,13 +12,11 @@ This wealth growth could be for a day, a month, months, years, short term or lon
 
 The assets that we deal in to manage your wealth includes: stocks and equities, bonds and treasury bills, mutual funds, ETFs. Other includes Alternative assets as Real Estate Investment Trust (REITs), Commodities, private equity, cryptocurrencies, rental income.
 
-These assets serve a purpose to deliver high alphas to the portfolio of the clients under our management over time. We buy at the best prices available and exit at favourable prices, while collecting profits from all this trading on the clients behalf. 
-
- Our goal is to make you richer than we met you.`
+These assets serve a purpose to deliver high alphas to the portfolio of the clients under our management over time. We buy at the best prices available and exit at favourable prices, while collecting profits from all this trading on the clients behalf. Our goal is to make you richer than we met you.`
   },
   {
     title: "Investment Management",
-    desc: `Investment Management at Eqfi invest is driven by the need to achieve optimal gains as the markets presents the opportunity. We take a position in the markets based on the client’s instructions and the depth of strategy we would love to execute on behalf of the client. Over time, we have tangible proofs of accomplishments in the markets including a 183% return on capital on Index CFD trading between June 2025 and December 2025.`
+    desc: `Investment Management at eqfi invest is driven by the need to achieve optimal gains as the markets presents the opportunity. We take a position in the markets based on the client’s instructions and the depth of strategy we would love to execute on behalf of the client. Over time, we have tangible proofs of accomplishments in the markets including a 183% return on capital on Index CFD trading between June 2025 and December 2025.`
   },
   {
     title: "Inheritance and Estate Planning",
@@ -26,9 +24,7 @@ These assets serve a purpose to deliver high alphas to the portfolio of the clie
   },
   {
     title: "Portfolio Management",
-    desc: `Portfolio management at Eqfi invest is driven by certified market experts who are Chartered Stockbrokers and traders. We trade on the local bourse, The NGX and we also trade on the Global markets such as The Nasdaq, The NYSE, The Chinese Index, The UK FTSE, and most of the markets in Europe. 
-    
-    The strategies that is applied to each portfolio is different due to the requirements of the investment policy statements (IPS), the request of the clients and the market realities.`
+    desc: `Portfolio management at eqfi invest is driven by certified market experts who are chartered stockbrokers and traders. We trade on the local bourse, the NGX and we also trade on the Global markets such as the Nasdaq, the NYSE, the Chinese Index, The UK FTSE, and most of the markets in Europe. The strategies that is applied to each portfolio is different due to the requirements of the investment policy statements (IPS), the request of the clients and the market realities.`
   }
 ];
 
@@ -85,7 +81,7 @@ export const testimonials = [
   },
   {
     name: 'Simeon Ayendi',
-    quote: 'Portfolio management at eqfi invest is driven by certified market experts who are Chartered Stockbrokers and traders. We trade on the local bourse, the NGX and we also trade on the Global markets such as the Nasdaq, the NYSE, the Chinese Index, The UK FTSE, and most of the markets in Europe. The strategies that is applied to each portfolio is different due to the requirements of the investment policy statements (IPS), the request of the clients and the market realities. We can be active traders, seeking multiple gains by trading actively, long and short or we might be passive on a portfolio and let it see the storms and ride the waves of the markets without interfering. But at the end, we make sure that whether active management or passive strategies, long /short strategies or whatever we adopt, we make gains and deliver prosperity to our clients to keep them happy and make our association with them worth the while.',
+    quote: 'Portfolio management at eqfi invest is driven by certified market experts who are chartered stockbrokers and traders. We trade on the local bourse, the NGX and we also trade on the Global markets such as the Nasdaq, the NYSE, the Chinese Index, The UK FTSE, and most of the markets in Europe. The strategies that is applied to each portfolio is different due to the requirements of the investment policy statements (IPS), the request of the clients and the market realities. We can be active traders, seeking multiple gains by trading actively, long and short or we might be passive on a portfolio and let it see the storms and ride the waves of the markets without interfering. But at the end, we make sure that whether active management or passive strategies, long /short strategies or whatever we adopt, we make gains and deliver prosperity to our clients to keep them happy and make our association with them worth the while.',
     title: 'Founder, Eqfi Invest'
   }
 ];

@@ -2,7 +2,6 @@
 'use client'
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Link from 'next/link';
 
 import { leadership } from '../data/landingContent';
 const tabData = [
@@ -84,11 +83,9 @@ export default function TrustTabs() {
                   <p className="text-gray-600 text-base md:text-lg leading-relaxed font-light mb-10">{tab.text}</p>
                 </>;
               })()}
-              <Link href="/strategies">
-                <button className="bg-amber-500 text-black px-10 py-4 font-extrabold text-lg uppercase tracking-widest rounded shadow drop-shadow-lg">
-                  Learn More
-                </button>
-              </Link>
+              <button className="bg-amber-500 text-black px-10 py-4 font-extrabold text-lg uppercase tracking-widest rounded shadow drop-shadow-lg">
+                Learn More
+              </button>
             </motion.div>
           </AnimatePresence>
 
