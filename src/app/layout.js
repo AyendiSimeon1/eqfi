@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import OrganizationSchema from "../components/OrganizationSchema";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +39,7 @@ export default function RootLayout({ children }) {
       <body
         className={`antialiased font-segoe`}
       >
+        <OrganizationSchema />
         {children}
       </body>
     </html>

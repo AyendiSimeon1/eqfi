@@ -1,0 +1,125 @@
+'use client'
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import Header from '../../components/Header';
+import Script from 'next/script';
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.eqfiinvest.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Careers",
+      "item": "https://www.eqfiinvest.com/careers"
+    }
+  ]
+};
+
+const CareersHero = () => {
+  return (
+    <>
+      <Script
+        id="breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+      <main className="min-h-screen bg-white">
+        <Header />
+        <section className="relative flex flex-col md:flex-row items-stretch bg-white overflow-hidden">
+          {/* Left Content */}
+          <div className="w-full md:w-1/2 p-8 md:p-20 flex flex-col justify-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Link href="/">
+                <button className="text-[#005a9c] text-sm flex items-center gap-1 mb-6 hover:underline">
+                  <span>&lt;</span> Home
+                </button>
+              </Link>
+
+              <div className="w-12 h-1 bg-yellow-400 mb-6" /> {/* Gold Accent Line */}
+
+              <h1 className="text-5xl font-light text-[#003366] mb-8">Careers</h1>
+
+              <p className="text-gray-600 text-lg leading-relaxed max-w-lg">
+                Join our team and help shape the future of wealth management.
+                We're looking for talented individuals passionate about finance and client success.
+              </p>
+            </motion.div>
+          </div>
+
+          {/* Right Image */}
+          <div className="w-full md:w-1/2 relative">
+            <img
+              src="/careers-hero.jpg"
+              alt="Careers at EQFI Invest"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </section>
+
+        {/* Additional content can be added here */}
+        <motion.footer
+          className="bg-[#0B0F14] text-gray-300 border-t border-white/5"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-12 gap-12">
+            {/* Brand */}
+            <div className="md:col-span-4 space-y-5">
+              <span className="text-2xl md:text-3xl font-extrabold tracking-wide text-white">EQFI</span>
+              <p className="text-base md:text-lg leading-relaxed text-gray-400 max-w-sm">
+                EQFI Group provides global investment solutions and
+                long-term wealth strategies for institutional and private investors.
+              </p>
+            </div>
+
+            {/* Contact */}
+            <div className="md:col-span-3 space-y-4">
+              <h3 className="text-lg font-semibold text-white">Contact</h3>
+              <div className="space-y-2 text-gray-400">
+                <p>Global Offices</p>
+                <p>+234 903 182 6250</p>
+                <p>info@eqfi.com</p>
+                <p>Mon–Fri, 8:00 – 18:00</p>
+              </div>
+            </div>
+
+            {/* Social */}
+            <div className="flex items-center gap-5 pt-4 text-gray-500">
+              <a className="hover:text-white transition" href="#" aria-label="LinkedIn">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zM8 19H5v-9h3v9zm-1.5-10.3A1.8 1.8 0 1 1 6.5 5a1.8 1.8 0 0 1 0 3.7zM20 19h-3v-4.6c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V19h-3v-9h2.9v1.2h.1c.4-.7 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.7V19z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-white/5">
+            <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between text-base md:text-lg text-gray-500 gap-3">
+              <p>© 2026 EQFI. All rights reserved.</p>
+              <p>Regulated. Trusted. Global.</p>
+            </div>
+          </div>
+        </motion.footer>
+      </main>
+    </>
+  );
+};
+
+export default CareersHero;
