@@ -73,6 +73,42 @@ export default function Careers() {
             <h3 className="text-2xl font-semibold text-[#003366] mb-4">Report to</h3>
             <p className="text-gray-600">Head of Sales and Marketing.</p>
           </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md mt-8">
+            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Contract for Difference Trader</h2>
+            <p className="text-gray-600 mb-6">
+              Our firm specialises in the trading of CFD assets as we find it particularly flexible and lucrative, within our risk parameters.
+            </p>
+            
+            <p className="text-gray-600 mb-6">
+              We think that by consistently monitoring the markets, taking trades, monitoring risk, we can make and beat the benchmarks and composite flatly each year.
+              We already have proofs to that effect such as the 183% return on investment we came about in 2025.
+              So it is achievable, possible and scalable.
+            </p>
+
+            <p className="text-gray-600 mb-6">
+              If you think you can match our records, then we need to talk.
+            </p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Whom we are looking for</h3>
+            <ul className="text-gray-600 mb-6 list-disc list-inside">
+              <li>Possession of a University Degree especially in fields as Economics and Banking and Finance</li>
+              <li>Advanced degree like a masters in economics or a PhD or associated professional qualifications</li>
+              <li>A viable trading report or record on CFD assets trading with strong emphasis on the fundamental analysis and technical analysis</li>
+              <li>A thinking and complementary attitude towards risk management and trade lot sizing</li>
+              <li>An enlightened mind and willing to learn and build something spectacular while young</li>
+              <li>A person of integrity and ethics</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">What you will be doing</h3>
+            <ul className="text-gray-600 mb-6 list-disc list-inside">
+              <li>You will be given live account to manage and generate Alphas</li>
+              <li>You will help with marketing effort and satisfying clients request for things like additional information on the state of their account</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Renumeration</h3>
+            <p className="text-gray-600">Competitive and standard.</p>
+          </div>
         </div>
       </section>
       <motion.footer
@@ -88,7 +124,7 @@ export default function Careers() {
           <div className="md:col-span-4 space-y-5">
             <span className="text-2xl md:text-3xl font-extrabold tracking-wide text-white">EQFI</span>
             <p className="text-base md:text-lg leading-relaxed text-gray-400 max-w-sm">
-              Citadel Fisher Wealth Group provides global investment solutions and
+              EQFI Group provides global investment solutions and
               long-term wealth strategies for institutional and private investors.
             </p>
           </div>
@@ -134,7 +170,7 @@ export default function Careers() {
             <div className="text-base md:text-lg space-y-2 text-gray-400">
               <p>Global Offices</p>
               <p>+234 903 182 6250</p>
-              <p>info@eqfi.com</p>
+              <p>info@eqfiinvest.com</p>
               <p>Mon–Fri, 8:00 – 18:00</p>
             </div>
 
