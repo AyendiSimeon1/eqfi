@@ -19,6 +19,7 @@ export default function Header() {
   const navLinks = [
     { name: 'Who We Are', href: '/who-we-are' },
     { name: 'Strategies', href: '/strategies' },
+    { name: 'Private Equity', href: '/private-equity' },
     { name: 'Insights', href: '#insights' },
     { name: 'Careers', href: '/careers' },
     { name: 'Contact', href: '/contact' },
