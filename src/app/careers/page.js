@@ -50,6 +50,40 @@ export default function Careers() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white p-8 rounded-lg shadow-md">
+            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Private Equity Principal / Material Risk Taker</h2>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Senior Role: Hybrid</h3>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Responsibilities</h3>
+            <ul className="text-gray-600 mb-6 list-disc list-inside">
+              <li>Manage the Private Equity business of EQFI PE</li>
+              <li>Ensure the firm is profitable always and maintains adequate liquidity</li>
+              <li>Arrange PE prospects and their execution</li>
+              <li>Hire staff and build out the team while providing an ethical environment for career thriving and general intellectual conviviality</li>
+              <li>Be involved in government relations and long-term planning</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Qualifications</h3>
+            <ul className="text-gray-600 mb-6 list-disc list-inside">
+              <li>A University Degree</li>
+              <li>Advanced University Degree and education from prestigious institutions</li>
+              <li>Possession of a professional certification</li>
+              <li>Good knowledge of accounting</li>
+              <li>Experience in global PE industry</li>
+              <li>A keen eye for excellence and what matters in the long term with visionary thinking</li>
+              <li>Ethical with fair sense of judgment</li>
+              <li>Agile and active lifestyle</li>
+              <li>Excellent communication, leadership ability and integrity</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Remuneration</h3>
+            <p className="text-gray-600 mb-6">Competitive and industry standard.</p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">How to Apply</h3>
+            <p className="text-gray-600">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md mt-8">
             <h2 className="text-3xl font-semibold text-[#003366] mb-6">Sales Associates - Remote</h2>
             <p className="text-gray-600 mb-6">
               We need you to help drive traffic to our services. You drive patronage to the company and ensure that clients are well attended to and they leave with a sense of accomplishments of what they set to achieve by using our services. 
