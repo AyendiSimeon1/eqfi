@@ -61,7 +61,7 @@ export default function Header() {
               <Link 
                 key={link.name} 
                 href={link.href}
-                className="text-gray-100 hover:text-transparent hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-600 hover:bg-clip-text text-lg font-body uppercase tracking-widest transition-all duration-300 drop-shadow-lg"
+                className="text-gray-100 hover:text-transparent hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-600 hover:bg-clip-text text-base font-body uppercase tracking-widest transition-all duration-300 drop-shadow-lg"
                 onClick={(e) => {
                   // Prevent default only for hash links
                   if (link.href.startsWith('#')) {
@@ -73,9 +73,12 @@ export default function Header() {
                 {link.name}
               </Link>
             ))}
-            {/* <button className="bg-amber-500 text-black hover:bg-amber-400 px-8 py-3 text-lg font-extrabold uppercase tracking-widest rounded transition-all drop-shadow-lg">
-              Client Login
-            </button> */}
+            <Link
+              href="/endowment-fund-management"
+              className="text-gray-100 hover:text-transparent hover:bg-gradient-to-r hover:from-amber-400 hover:to-amber-600 hover:bg-clip-text text-base font-body uppercase tracking-widest transition-all duration-300 drop-shadow-lg"
+            >
+              Fund Management
+            </Link>
         </div>
 
         {/* Mobile Toggle Button */}

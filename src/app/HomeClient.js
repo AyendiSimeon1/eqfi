@@ -11,6 +11,7 @@ import AboutWealth from '../components/AboutWealth';
 import Testimonials from '../components/Testimonials';
 import TrustTab from '../components/TrustTab';
 import NewsFeed from '../components/NewsFeed';
+import InvestorRelations from '../components/InvestorRelations';
 
 const PlanCTA = () => {
   const router = useRouter();
@@ -101,6 +102,17 @@ export default function HomeClient() {
       {/* <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: 0.8 }}>
         <Testimonials />
       </motion.div> */}
+
+      {/* Investor Relations Section */}
+      <motion.div
+        id="investor-relations"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.6 }}
+      >
+        <InvestorRelations />
+      </motion.div>
 
       {/* Footer / Contact */}
      <motion.footer
