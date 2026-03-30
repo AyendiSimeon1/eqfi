@@ -51,7 +51,7 @@ export default function Header() {
         {/* Logo - Citadel Style Boldness */}
         <div className="flex items-center gap-3">
             <Link href="/">
-                <img src="/eqfi-logo.jpg" alt="EQFI Logo" className="h-12 w-auto object-contain" />
+                <img src="/eqfi-logo.jpg" alt="EQFI Logo" className="h-10 md:h-12 w-auto object-contain" />
             </Link>
         </div>
 
@@ -114,7 +114,7 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="text-gray-100 text-3xl font-body border-b border-gray-800 pb-4 flex justify-between items-center group hover:text-amber-400 transition-colors"
+                    className="text-gray-100 text-2xl font-body border-b border-gray-800 pb-4 flex justify-between items-center group hover:text-amber-400 transition-colors"
                     onClick={(e) => {
                       // Prevent default only for hash links
                       if (link.href.startsWith('#')) {
@@ -131,6 +131,21 @@ export default function Header() {
                   </Link>
                 </motion.div>
               ))}
+              
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: navLinks.length * 0.1 }}
+              >
+                <Link
+                  href="/endowment-fund-management"
+                  className="text-gray-100 text-2xl font-body border-b border-gray-800 pb-4 flex justify-between items-center group hover:text-amber-400 transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Fund Management
+                  <span className="text-amber-500 group-hover:translate-x-2 transition-transform">→</span>
+                </Link>
+              </motion.div>
               
               <motion.button 
                 initial={{ opacity: 0 }}
