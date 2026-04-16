@@ -50,6 +50,103 @@ export default function Careers() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white p-8 rounded-lg shadow-md">
+            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Departmental Accountant / Treasury Assistant</h2>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Overview</h3>
+            <p className="text-gray-600 mb-6">
+              We seek to hire an accounting major for a role in treasury. The firm seeks to raise financing at major global financing hubs including the UK, Beijing, and NYC. Monies we raise in each center cater to operations in that city and adjoining areas.
+            </p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Your Position</h3>
+            <p className="text-gray-600 mb-6">
+              Your job is to aid the fund raise and, importantly, account for each center.
+            </p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Requirements</h3>
+            <ul className="text-gray-600 mb-6 list-disc list-inside">
+              <li>University Degree in Accounting</li>
+              <li>An Accounting Professional Qualification</li>
+              <li>Understanding of finance, financing, and global markets</li>
+              <li>Nimble, intelligent, and honest with a happy spirit</li>
+              <li>Show leadership and competence</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Work Mode</h3>
+            <p className="text-gray-600 mb-6">Onsite & Remote</p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Number of Positions</h3>
+            <p className="text-gray-600 mb-6">4 staffers</p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">How to Apply</h3>
+            <p className="text-gray-600">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md mt-8">
+            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Global Market Analyst / Trader and Portfolio Manager</h2>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Overview</h3>
+            <p className="text-gray-600 mb-6">
+              We seek to hire you to provide actionable insights on the markets and develop unique trading strategies and help in client relationship management.
+            </p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Requirements</h3>
+            <ul className="text-gray-600 mb-6 list-disc list-inside">
+              <li>A University Degree in Economics</li>
+              <li>Professional Certification in The CFA Series, US Series 7 & 63, or the Nigeria CISI level 2</li>
+              <li>Proof to have successfully managed portfolios or traded local or international equities markets</li>
+              <li>Evidence of subscription to The Wall Street Journal in the last 5 years</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Work Mode</h3>
+            <p className="text-gray-600 mb-6">Onsite / Remote</p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Primary Location</h3>
+            <p className="text-gray-600 mb-6">Lagos, Nigeria</p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">How to Apply</h3>
+            <p className="text-gray-600">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md mt-8">
+            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Social Media Manager</h2>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Overview</h3>
+            <p className="text-gray-600 mb-6">
+              We seek to hire a social or new media manager who is skilled in search and media optimization, has an artistic eye, and can sustain long-term new media advertising campaigns.
+            </p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Responsibilities</h3>
+            <p className="text-gray-600 mb-6">
+              Work with management on ideology and campaign development and execution.
+            </p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Requirements</h3>
+            <ul className="text-gray-600 mb-6 list-disc list-inside">
+              <li>A University Degree</li>
+              <li>Creative art training</li>
+              <li>Evidence of past successful campaigns</li>
+              <li>Upwardly mobile with a grounding in values and what matters most</li>
+              <li>Intelligent and competent with proven track record</li>
+              <li>Friendly and engaging</li>
+            </ul>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Work Mode</h3>
+            <p className="text-gray-600 mb-6">On-Site</p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Primary Location</h3>
+            <p className="text-gray-600 mb-6">Lagos, Nigeria</p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Number of Positions</h3>
+            <p className="text-gray-600 mb-6">2</p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Remuneration</h3>
+            <p className="text-gray-600 mb-6">Competitive</p>
+            
+            <h3 className="text-2xl font-semibold text-[#003366] mb-4">How to Apply</h3>
+            <p className="text-gray-600">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg shadow-md mt-8">
             <h2 className="text-3xl font-semibold text-[#003366] mb-6">Private Equity Principal / Material Risk Taker</h2>
             
             <h3 className="text-2xl font-semibold text-[#003366] mb-4">Senior Role: Hybrid</h3>
