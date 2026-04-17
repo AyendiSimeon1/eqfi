@@ -50,20 +50,20 @@ export default function Careers() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white p-8 rounded-lg shadow-md">
-            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Departmental Accountant / Treasury Assistant</h2>
+            <h2 className="text-2xl font-semibold text-[#003366] mb-4">Departmental Accountant / Treasury Assistant</h2>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Overview</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Overview</h3>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
               We seek to hire an accounting major for a role in treasury. The firm seeks to raise financing at major global financing hubs including the UK, Beijing, and NYC. Monies we raise in each center cater to operations in that city and adjoining areas.
             </p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Your Position</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Your Position</h3>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
               Your job is to aid the fund raise and, importantly, account for each center.
             </p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Requirements</h3>
-            <ul className="text-gray-600 mb-6 list-disc list-inside">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Requirements</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-sm">
               <li>University Degree in Accounting</li>
               <li>An Accounting Professional Qualification</li>
               <li>Understanding of finance, financing, and global markets</li>
@@ -71,57 +71,57 @@ export default function Careers() {
               <li>Show leadership and competence</li>
             </ul>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Work Mode</h3>
-            <p className="text-gray-600 mb-6">Onsite & Remote</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Work Mode</h3>
+            <p className="text-gray-600 mb-4 text-sm">Onsite, Remote</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Number of Positions</h3>
-            <p className="text-gray-600 mb-6">4 staffers</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Number of Positions</h3>
+            <p className="text-gray-600 mb-4 text-sm">4 staffers</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">How to Apply</h3>
-            <p className="text-gray-600">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">How to Apply</h3>
+            <p className="text-gray-600 text-sm">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-md mt-8">
-            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Global Market Analyst / Trader and Portfolio Manager</h2>
+            <h2 className="text-2xl font-semibold text-[#003366] mb-4">Global Market Analyst / Trader and Portfolio Manager</h2>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Overview</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Overview</h3>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
               We seek to hire you to provide actionable insights on the markets and develop unique trading strategies and help in client relationship management.
             </p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Requirements</h3>
-            <ul className="text-gray-600 mb-6 list-disc list-inside">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Requirements</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-sm">
               <li>A University Degree in Economics</li>
               <li>Professional Certification in The CFA Series, US Series 7 & 63, or the Nigeria CISI level 2</li>
               <li>Proof to have successfully managed portfolios or traded local or international equities markets</li>
               <li>Evidence of subscription to The Wall Street Journal in the last 5 years</li>
             </ul>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Work Mode</h3>
-            <p className="text-gray-600 mb-6">Onsite / Remote</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Work Mode</h3>
+            <p className="text-gray-600 mb-4 text-sm">Onsite, Remote</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Primary Location</h3>
-            <p className="text-gray-600 mb-6">Lagos, Nigeria</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Primary Location</h3>
+            <p className="text-gray-600 mb-4 text-sm">Lagos, Nigeria</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">How to Apply</h3>
-            <p className="text-gray-600">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">How to Apply</h3>
+            <p className="text-gray-600 text-sm">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-md mt-8">
-            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Social Media Manager</h2>
+            <h2 className="text-2xl font-semibold text-[#003366] mb-4">Social Media Manager</h2>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Overview</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Overview</h3>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
               We seek to hire a social or new media manager who is skilled in search and media optimization, has an artistic eye, and can sustain long-term new media advertising campaigns.
             </p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Responsibilities</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Responsibilities</h3>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
               Work with management on ideology and campaign development and execution.
             </p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Requirements</h3>
-            <ul className="text-gray-600 mb-6 list-disc list-inside">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Requirements</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-sm">
               <li>A University Degree</li>
               <li>Creative art training</li>
               <li>Evidence of past successful campaigns</li>
@@ -130,29 +130,29 @@ export default function Careers() {
               <li>Friendly and engaging</li>
             </ul>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Work Mode</h3>
-            <p className="text-gray-600 mb-6">On-Site</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Work Mode</h3>
+            <p className="text-gray-600 mb-4 text-sm">On-Site</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Primary Location</h3>
-            <p className="text-gray-600 mb-6">Lagos, Nigeria</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Primary Location</h3>
+            <p className="text-gray-600 mb-4 text-sm">Lagos, Nigeria</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Number of Positions</h3>
-            <p className="text-gray-600 mb-6">2</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Number of Positions</h3>
+            <p className="text-gray-600 mb-4 text-sm">2</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Remuneration</h3>
-            <p className="text-gray-600 mb-6">Competitive</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Remuneration</h3>
+            <p className="text-gray-600 mb-4 text-sm">Competitive</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">How to Apply</h3>
-            <p className="text-gray-600">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">How to Apply</h3>
+            <p className="text-gray-600 text-sm">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-md mt-8">
-            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Private Equity Principal / Material Risk Taker</h2>
+            <h2 className="text-2xl font-semibold text-[#003366] mb-4">Private Equity Principal / Material Risk Taker</h2>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Senior Role: Hybrid</h3>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Senior Role: Hybrid</h3>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Responsibilities</h3>
-            <ul className="text-gray-600 mb-6 list-disc list-inside">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Responsibilities</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-sm">
               <li>Manage the Private Equity business of EQFI PE</li>
               <li>Ensure the firm is profitable always and maintains adequate liquidity</li>
               <li>Arrange PE prospects and their execution</li>
@@ -160,8 +160,8 @@ export default function Careers() {
               <li>Be involved in government relations and long-term planning</li>
             </ul>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Qualifications</h3>
-            <ul className="text-gray-600 mb-6 list-disc list-inside">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Qualifications</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-sm">
               <li>A University Degree</li>
               <li>Advanced University Degree and education from prestigious institutions</li>
               <li>Possession of a professional certification</li>
@@ -173,56 +173,56 @@ export default function Careers() {
               <li>Excellent communication, leadership ability and integrity</li>
             </ul>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Remuneration</h3>
-            <p className="text-gray-600 mb-6">Competitive and industry standard.</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Remuneration</h3>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">Competitive and industry standard.</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">How to Apply</h3>
-            <p className="text-gray-600">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">How to Apply</h3>
+            <p className="text-gray-600 text-sm">Send CV to <a href="mailto:info@eqfiinvest.com" className="text-[#005a9c] hover:underline">info@eqfiinvest.com</a></p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-md mt-8">
-            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Sales Associates - Remote</h2>
-            <p className="text-gray-600 mb-6">
+            <h2 className="text-2xl font-semibold text-[#003366] mb-4">Sales Associates - Remote</h2>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
               We need you to help drive traffic to our services. You drive patronage to the company and ensure that clients are well attended to and they leave with a sense of accomplishments of what they set to achieve by using our services. 
               The role is remote so you can work from any location. You will be equipped with the tools to do your business and job adequately.
             </p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Your Qualification</h3>
-            <ul className="text-gray-600 mb-6 list-disc list-inside">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Your Qualification</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-sm">
               <li>Minimum Qualification is a University Degree in any field.</li>
               <li>Firm understanding of finance, financial services, investment management / Portfolios/ Asset Management and trading.</li>
               <li>Articulate and Honest.</li>
               <li>Desire to write the CIS exams series or other relevant professional exams.</li>
             </ul>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Work mode</h3>
-            <p className="text-gray-600 mb-6">Remote</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Work mode</h3>
+            <p className="text-gray-600 text-sm">Remote</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Remuneration</h3>
-            <p className="text-gray-600 mb-6">Competitive and global industry standard.</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Remuneration</h3>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">Competitive and global industry standard.</p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Report to</h3>
-            <p className="text-gray-600">Head of Sales and Marketing.</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Report to</h3>
+            <p className="text-gray-600 text-sm">Head of Sales and Marketing.</p>
           </div>
 
           <div className="bg-white p-8 rounded-lg shadow-md mt-8">
-            <h2 className="text-3xl font-semibold text-[#003366] mb-6">Contract for Difference Trader</h2>
-            <p className="text-gray-600 mb-6">
+            <h2 className="text-2xl font-semibold text-[#003366] mb-4">Contract for Difference Trader</h2>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
               Our firm specialises in the trading of CFD assets as we find it particularly flexible and lucrative, within our risk parameters.
             </p>
             
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
               We think that by consistently monitoring the markets, taking trades, monitoring risk, we can make and beat the benchmarks and composite flatly each year.
               We already have proofs to that effect such as the 183% return on investment we came about in 2025.
               So it is achievable, possible and scalable.
             </p>
 
-            <p className="text-gray-600 mb-6">
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
               If you think you can match our records, then we need to talk.
             </p>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Whom we are looking for</h3>
-            <ul className="text-gray-600 mb-6 list-disc list-inside">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Whom we are looking for</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-sm">
               <li>Possession of a University Degree especially in fields as Economics and Banking and Finance</li>
               <li>Advanced degree like a masters in economics or a PhD or associated professional qualifications</li>
               <li>A viable trading report or record on CFD assets trading with strong emphasis on the fundamental analysis and technical analysis</li>
@@ -231,14 +231,14 @@ export default function Careers() {
               <li>A person of integrity and ethics</li>
             </ul>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">What you will be doing</h3>
-            <ul className="text-gray-600 mb-6 list-disc list-inside">
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">What you will be doing</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-sm">
               <li>You will be given live account to manage and generate Alphas</li>
               <li>You will help with marketing effort and satisfying clients request for things like additional information on the state of their account</li>
             </ul>
             
-            <h3 className="text-2xl font-semibold text-[#003366] mb-4">Renumeration</h3>
-            <p className="text-gray-600">Competitive and standard.</p>
+            <h3 className="text-lg font-semibold text-[#003366] mb-3">Renumeration</h3>
+            <p className="text-gray-600 text-sm">Competitive and standard.</p>
           </div>
         </div>
       </section>
