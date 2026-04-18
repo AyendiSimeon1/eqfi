@@ -50,6 +50,56 @@ export default function Careers() {
       <section className="py-12 md:py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto space-y-4 md:space-y-8">
           <div className="bg-white p-4 md:p-8 rounded-lg shadow-md">
+            <h2 className="text-xl md:text-2xl font-semibold text-[#003366] mb-4">Market Infraction Analyst</h2>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Overview</h3>
+            <p className="text-gray-600 mb-4 text-xs md:text-sm leading-relaxed">
+              We seek to hire a Market Infraction Analyst who will work alongside our traders and market makers to sieve-out market infractions on a continuous basis on trading days.
+            </p>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Requirements</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-xs md:text-sm">
+              <li>A University Degree in Law and Legal Studies</li>
+              <li>Completed The NYSC program with tangible proof of work</li>
+              <li>Completed Level 2 of the CISI Nigeria, or US Series 7 & 63</li>
+              <li>Called to the US Bar or the Nigeria Bar</li>
+              <li>0-2 years of practice</li>
+            </ul>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Other Needs</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-xs md:text-sm">
+              <li>Ability to initiate litigation and conclude in record time</li>
+              <li>Ability to read contracts</li>
+              <li>Self-drive and inquisitive nature</li>
+            </ul>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Remuneration</h3>
+            <p className="text-gray-600 mb-4 text-xs md:text-sm">Competitive</p>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Work Mode</h3>
+            <p className="text-gray-600 text-xs md:text-sm">On-Site and Remote</p>
+          </div>
+
+          <div className="bg-white p-4 md:p-8 rounded-lg shadow-md">
+            <h2 className="text-xl md:text-2xl font-semibold text-[#003366] mb-4">Real Estate Analyst</h2>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Overview</h3>
+            <p className="text-gray-600 mb-4 text-xs md:text-sm leading-relaxed">
+              Specializes in commercial real estate investing and advocacy.
+            </p>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Requirements</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-xs md:text-sm">
+              <li>Proof of work in commercial real estate trading, design and construction with interest in built cities</li>
+              <li>A Professional Qualification</li>
+              <li>An academic degree</li>
+            </ul>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Remuneration</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Competitive</p>
+          </div>
+
+          <div className="bg-white p-4 md:p-8 rounded-lg shadow-md">
             <h2 className="text-xl md:text-2xl font-semibold text-[#003366] mb-4">Departmental Accountant / Treasury Assistant</h2>
             
             <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Overview</h3>
