@@ -290,6 +290,26 @@ export default function Careers() {
             <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Renumeration</h3>
             <p className="text-gray-600 text-xs md:text-sm">Competitive and standard.</p>
           </div>
+
+          <div className="bg-white p-4 md:p-8 rounded-lg shadow-md">
+            <h2 className="text-xl md:text-2xl font-semibold text-[#003366] mb-4">Driver</h2>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Overview</h3>
+            <p className="text-gray-600 mb-4 text-xs md:text-sm leading-relaxed">
+              We seek to boost hiring in the company drivers pool. We are hiring a driver to maintain the company vehicles and like assets.
+            </p>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Qualifications</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-xs md:text-sm">
+              <li>Possession of an International drivers License</li>
+              <li>A stable person</li>
+              <li>Honest and respectful</li>
+              <li>Willing to undertake statutory test and checks by the relevant authorities</li>
+            </ul>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Remuneration</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Competitive</p>
+          </div>
         </div>
       </section>
       <motion.footer
