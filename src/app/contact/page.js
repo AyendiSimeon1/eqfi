@@ -83,7 +83,7 @@ const ContactHero = () => {
           <div className="text-gray-600 text-sm md:text-base mb-8 md:mb-12">
             <p className="mb-2">
               If you are new to us, please call
-              <a href="tel:09031826250" className="text-blue-800 underline ml-1 font-medium block sm:inline px-2">09031826250</a>
+              <a href="tel:09136002239" className="text-blue-800 underline ml-1 font-medium block sm:inline px-2">09136002239</a>
                 or email
               <a href="mailto:info@eqfiinvest.com" className="text-blue-800 underline ml-1 font-medium block sm:inline">info@eqfiinvest.com</a>.
             </p>
