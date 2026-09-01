@@ -50,11 +50,11 @@ export default function Careers() {
       <section className="py-12 md:py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto space-y-4 md:space-y-8">
           <div className="bg-white p-4 md:p-8 rounded-lg shadow-md">
-            <h2 className="text-xl md:text-2xl font-semibold text-[#003366] mb-4">Market Infraction Analyst</h2>
+            <h2 className="text-xl md:text-2xl font-semibold text-[#003366] mb-4">Market Infrastructure Analyst</h2>
             
             <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Overview</h3>
             <p className="text-gray-600 mb-4 text-xs md:text-sm leading-relaxed">
-              We seek to hire a Market Infraction Analyst who will work alongside our traders and market makers to sieve-out market infractions on a continuous basis on trading days.
+              We seek to hire a Market Infrastructure Analyst who will work alongside our traders and market makers to sieve-out market infrastructure issues on a continuous basis on trading days.
             </p>
             
             <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Requirements</h3>
@@ -310,6 +310,22 @@ export default function Careers() {
             <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Remuneration</h3>
             <p className="text-gray-600 text-xs md:text-sm">Competitive</p>
           </div>
+
+          <div className="bg-white p-4 md:p-8 rounded-lg shadow-md">
+            <h2 className="text-xl md:text-2xl font-semibold text-[#003366] mb-4">Private Equity Co-financing Head</h2>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Responsibilities</h3>
+            <ul className="text-gray-600 mb-4 list-disc list-inside text-xs md:text-sm">
+              <li>Review the financial aspects and requirements of each private equity project we undertake</li>
+              <li>Develop inspirational financing modes and nodes and initiatives to finance stated projects to execution and delivery</li>
+              <li>Respond to investors and financiers requirements and needs as they arise</li>
+              <li>Ensure a well financed private equity enterprise</li>
+              <li>Ensure the viability of the firm</li>
+            </ul>
+            
+            <h3 className="text-base md:text-lg font-semibold text-[#003366] mb-3">Remuneration</h3>
+            <p className="text-gray-600 text-xs md:text-sm">Competitive</p>
+          </div>
         </div>
       </section>
       <motion.footer
@@ -370,7 +386,7 @@ export default function Careers() {
 
             <div className="text-sm md:text-lg space-y-1 md:space-y-2 text-gray-400">
               <p>Global Offices</p>
-              <p>+234 903 182 6250</p>
+              <p>+234913 600 2239</p>
               <p>info@eqfiinvest.com</p>
               <p>Mon–Fri, 8:00 – 18:00</p>
             </div>

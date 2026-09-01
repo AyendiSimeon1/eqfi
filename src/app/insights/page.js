@@ -279,7 +279,7 @@ export default function Insights() {
 
             <div className="text-sm md:text-lg space-y-1 md:space-y-2 text-gray-400">
               <p>Global Offices</p>
-              <p>+234 903 182 6250</p>
+              <p>+234913 600 2239</p>
               <p>info@eqfiinvest.com</p>
               <p>Mon–Fri, 8:00 – 18:00</p>
             </div>

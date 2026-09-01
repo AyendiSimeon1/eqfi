@@ -120,7 +120,7 @@ export default function Offices() {
 
             <div className="text-base md:text-lg space-y-2 text-gray-400">
               <p>Global Offices</p>
-              <p>+234 903 182 6250</p>
+              <p>+234913 600 2239</p>
               <p>info@eqfi.com</p>
               <p>Mon–Fri, 8:00 – 18:00</p>
             </div>
